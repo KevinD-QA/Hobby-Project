@@ -10,6 +10,7 @@ public class HobbyProjectApplication {
 		SpringApplication.run(HobbyProjectApplication.class, args);
 		
 		//Initial commit
+		System.out.println("Initial Commit");
 	}
 
 }
