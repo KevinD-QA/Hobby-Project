@@ -19,8 +19,8 @@ public class Character {
 	private String element;
 	private Long level;
 	
-	@ManyToOne
-	private Team team;
+//	@ManyToOne
+//	private Team team;
 	
 	public Character(Long id, String name, String weapon, String element, Long level) {
 		super();
