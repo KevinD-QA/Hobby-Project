@@ -10,6 +10,6 @@ import Domain.Character;
 @Repository
 public interface CharacterRepo extends JpaRepository<Character, Long> {
 	
-	List<Character> findByNmame(String name);
+	List<Character> findByElement(String Element);
 
 }

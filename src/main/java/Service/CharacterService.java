@@ -1,5 +1,8 @@
 package Service;
 
+import java.util.List;
+import java.util.Optional;
+
 import javax.persistence.EntityNotFoundException;
 
 import org.springframework.stereotype.Service;
@@ -24,6 +27,16 @@ public class CharacterService {
 	public CharacterDTO createCharacter(Character character) {
 		Character newCharacter = this.repo.save(character);
 		return this.mapper.mapToDTO(newCharacter);
+	}
+	
+	public CharacterDTO findCharacter(Long id) {
+		Optional<Character> optionalCharacter = this.repo.findById(id);
+		Character selected = optionalCharacter.orElseThrow(() -> new EntityNotFoundException());
+		return this.mapper.mapToDTO(selected);
+	}
+	
+	public List<Character> findByElement(String element) {
+		return this.repo.findByElement(element);
 	}
 	
 	public CharacterDTO updateCharacter(Long id, Character character) {
