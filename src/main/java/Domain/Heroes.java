@@ -4,10 +4,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+//import javax.persistence.ManyToOne;
 
 @Entity
-public class Character {
+public class Heroes {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) //Auto Increment
@@ -22,7 +22,7 @@ public class Character {
 //	@ManyToOne
 //	private Team team;
 	
-	public Character(Long id, String name, String weapon, String element, Long level) {
+	public Heroes(Long id, String name, String weapon, String element, Long level) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -30,7 +30,7 @@ public class Character {
 		this.element = element;
 		this.level = level;
 	}
-	public Character(String name, String weapon, String element, Long level) {
+	public Heroes(String name, String weapon, String element, Long level) {
 		super();
 		this.name = name;
 		this.weapon = weapon;
@@ -92,7 +92,7 @@ public class Character {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Character other = (Character) obj;
+		Heroes other = (Heroes) obj;
 		if (element == null) {
 			if (other.element != null)
 				return false;

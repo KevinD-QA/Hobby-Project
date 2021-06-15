@@ -2,15 +2,15 @@ package Mappers;
 
 import org.springframework.stereotype.Service;
 
-import DTO.CharacterDTO;
-import Domain.Character;
+import DTO.HeroDTO;
+import Domain.Heroes;
 
 @Service
-public class CharacterMapper implements Mapper<Character, CharacterDTO> {
+public class HeroMapper implements Mapper<Heroes, HeroDTO> {
 
 	@Override
-	public CharacterDTO mapToDTO(Character character) {
-		CharacterDTO dto = new CharacterDTO();
+	public HeroDTO mapToDTO(Heroes character) {
+		HeroDTO dto = new HeroDTO();
 		
 		dto.setId(character.getId());
 		dto.setName(character.getName());
@@ -22,7 +22,7 @@ public class CharacterMapper implements Mapper<Character, CharacterDTO> {
 	}
 
 	@Override
-	public CharacterDTO mapFromDTO(Character dto) {
+	public HeroDTO mapFromDTO(Heroes dto) {
 		// TODO Auto-generated method stub
 		return null;
 	}

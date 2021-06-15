@@ -4,12 +4,12 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import Domain.Character;
+import Domain.Heroes;
 
 
 @Repository
-public interface CharacterRepo extends JpaRepository<Character, Long> {
+public interface HeroRepo extends JpaRepository<Heroes, Long> {
 	
-	List<Character> findByElement(String Element);
+	List<Heroes> findByElement(String Element);
 
 }

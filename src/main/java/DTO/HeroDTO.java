@@ -1,6 +1,6 @@
 package DTO;
 
-public class CharacterDTO {
+public class HeroDTO {
 	
 	private Long id;
 	private String name;
@@ -8,10 +8,10 @@ public class CharacterDTO {
 	private String element;
 	private Long level;
 	
-	public CharacterDTO() {
+	public HeroDTO() {
 	}
 	
-	public CharacterDTO(Long id, String name, String weapon, String element, Long level) {
+	public HeroDTO(Long id, String name, String weapon, String element, Long level) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -20,7 +20,7 @@ public class CharacterDTO {
 		this.level = level;
 	}
 
-	public CharacterDTO(String name, String weapon, String element, Long level) {
+	public HeroDTO(String name, String weapon, String element, Long level) {
 		super();
 		this.name = name;
 		this.weapon = weapon;
