@@ -3,60 +3,38 @@
 const form = document.getElementById("output");
 
 const getHeroes = async () => {
-    const teams = await axios.get("/heroes/");
+    const tableBody = document.querySelector("tbody");
     document.getElementById("output").innerHTML = "";
-    teams.data.forEach(hero => renderHero(hero));
-    console.log(teams);
-}
-
-const renderHero = ({ id, name, element, weapon, level }) => {
-    const column = document.createElement("div");
-    column.className = "col";
-
-    const card = document.createElement("div");
-    card.className = "card";
-    column.appendChild(card);
-
-    const cardBody = document.createElement("div");
-    cardBody.className = "card-body";
-    card.appendChild(cardBody);
-
-    const nameInput = document.createElement("p");
-    nameInput.className = "card-text";
-    nameInput.innerText = `Name: ${name}`;
-    cardBody.appendChild(nameInput);
-
-    const elementInput = document.createElement("p");
-    elementInput.className = "card-text";
-    elementInput.innerText = `Element: ${element}`;
-    cardBody.appendChild(elementInput);
-
-    const weaponInput = document.createElement("p");
-    weaponInput.className = "card-text";
-    weaponInput.innerText = `Weapon: ${weapon}`;
-    cardBody.appendChild(weaponInput);
-
-    const levelInput = document.createElement("p");
-    levelInput.className = "card-text";
-    levelInput.innerText = `Level: ${level}`;
-    cardBody.appendChild(levelInput);
-
-    const cardFooter = document.createElement("div");
-    cardFooter.className = "card-footer";
-    card.appendChild(cardFooter);
-
-    const deleteButton = document.createElement("a");
-    deleteButton.innerText = "Delete";
-    deleteButton.className = "card-link";
-    deleteButton.addEventListener("click", function () {
-        deleteCar(id);
+    tableBody.innerHTML = "";
+    const teams = await axios.get("/heroes/");
+    teams.data.forEach(hero => {
+        renderHero(hero);
     });
-    cardFooter.appendChild(deleteButton);
+}
+const renderHero = hero => {
+    const tableBody = document.querySelector("tbody");
 
-    output.appendChild(column);
+    const newRow = document.createElement("tr");
+
+    newRow.appendChild(createTableCell(hero.id));
+    newRow.appendChild(createTableCell(hero.name));
+    newRow.appendChild(createTableCell(hero.element));
+    newRow.appendChild(createTableCell(hero.weapon));
+    newRow.appendChild(createTableCell(hero.level));
+    newRow.appendChild(updateHero(hero));
+    newRow.appendChild(deleteButton(hero.id));
+
+    tableBody.appendChild(newRow);
 }
 
 getHeroes();
+
+const createTableCell = (data) => {
+    const cell = document.createElement("td");
+    cell.innerText = data;
+    cell.className = "align-middle";
+    return cell;
+}
 
 document.getElementById("form").addEventListener("submit", function (event) {
     event.preventDefault();
@@ -78,7 +56,39 @@ document.getElementById("form").addEventListener("submit", function (event) {
     console.log(this);
 });
 
+const updateHero = (hero) => {
+    const updateCell = document.createElement("td");
+    const updateHero = document.createElement("button");
+    updateHero.innerText = "Update";
+    updateHero.className = "btn btn-warning";
+    updateHero.setAttribute("type", "button");
+    updateHero.setAttribute("data-bs-toggle", "modal");
+    updateHero.setAttribute("data-bs-target", "#AddTeamModal")
+    updateHero.addEventListener("click", function (event) {
+        document.getElementById("name").value = hero.name;
+        document.getElementById("element").value = hero.element;
+        document.getElementById("weapon").value - hero.weapon;
+        document.getElementById("level").value = hero.level;
+    });
+    updateCell.appendChild(updateHero);
+    return updateCell;
+}
+
+const deleteButton = (heroID) => {
+    const cell = document.createElement("td");
+    const deleteButton = document.createElement("button");
+    deleteButton.innerText = "Delete";
+    deleteButton.className = "btn btn-danger";
+    deleteButton.setAttribute("type", "submit");
+    deleteButton.addEventListener("click", function (event) {
+        deleteHero(heroID);
+    });
+
+    cell.appendChild(deleteButton);
+    return cell;
+}
+
 const deleteHero = async (id) => {
     const res = await axios.delete(`/heroes/remove/${id}`);
-    getHeroes();
+    getHeroes(); //Can't create aysnc functions inside deleteButton so created separate method
 };
