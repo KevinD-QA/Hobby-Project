@@ -1,4 +1,4 @@
-package Mappers;
+package com.example.mappers;
 
 public interface Mapper<X, Y> {
 

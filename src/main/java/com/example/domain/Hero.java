@@ -1,4 +1,4 @@
-package Domain;
+package com.example.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,7 +7,7 @@ import javax.persistence.Id;
 //import javax.persistence.ManyToOne;
 
 @Entity
-public class Heroes {
+public class Hero {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) //Auto Increment
@@ -22,7 +22,19 @@ public class Heroes {
 //	@ManyToOne
 //	private Team team;
 	
-	public Heroes(Long id, String name, String weapon, String element, Long level) {
+	public Hero() {
+		super();
+	}
+	
+	public Hero(String name, String weapon, String element, Long level) {
+		super();
+		this.name = name;
+		this.weapon = weapon;
+		this.element = element;
+		this.level = level;
+	}
+	
+	public Hero(Long id, String name, String weapon, String element, Long level) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -30,13 +42,7 @@ public class Heroes {
 		this.element = element;
 		this.level = level;
 	}
-	public Heroes(String name, String weapon, String element, Long level) {
-		super();
-		this.name = name;
-		this.weapon = weapon;
-		this.element = element;
-		this.level = level;
-	}
+	
 	public Long getId() {
 		return id;
 	}
@@ -92,7 +98,7 @@ public class Heroes {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Heroes other = (Heroes) obj;
+		Hero other = (Hero) obj;
 		if (element == null) {
 			if (other.element != null)
 				return false;

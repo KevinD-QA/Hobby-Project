@@ -1,4 +1,4 @@
-package DTO;
+package com.example.dto;
 
 public class HeroDTO {
 	
