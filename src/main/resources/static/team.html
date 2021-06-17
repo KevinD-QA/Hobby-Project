@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+</style>
+</head>
+
+<body>
+    <form class="form" id="form" action="" style="width: 500px; margin: auto">
+        <fieldset>
+            <legend>Character 1</legend>
+            <label for="name">Name: </label>
+            <input type="text" required autofocus class="form-control" id="name" />
+            <br>
+            <label for="element">Element: </label>
+            <select class=form-control id="element">
+                <option value="Anemo"> Anemo</option>
+                <option value="Electro"> Electro</option>
+                <option value="Cryo"> Cryo</option>
+                <option value="Hydro"> Hydro</option>
+                <option value="Geo"> Geo</option>
+                <option value="Pyro"> Pyro</option>
+            </select>
+            <br>
+            <label for="weapon">Weapon: </label>
+            <select class=form-control id="weapon">
+                <option value="Bow"> Bow</option>
+                <option value="Catalyst"> Catalyst</option>
+                <option value="Claymore"> Claymore</option>
+                <option value="Polearm"> Polearm</option>
+                <option value="Sword"> Sword</option>
+            </select>
+            <br>
+            <!-- Level <input type="range" min="1" max="100" step="2" value="50"> -->
+            <label for="name">Level: </label>
+            <input type="number" required autofocus class="form-control" id="level" />
+            <br>
+            <input class="btn btn-outline-danger" type="submit" />
+        </fieldset>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="form.js"></script>
+</body>
+
+</html>
