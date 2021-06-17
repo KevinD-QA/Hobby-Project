@@ -62,7 +62,7 @@ public class HeroService {
 		oldHero.setWeapon(newHero.getWeapon());
 		oldHero.setLevel(newHero.getLevel());
 		
-		Hero updatedHero = this.repo.save(oldHero); //overwriting old record
+		Hero updatedHero = this.repo.save(oldHero); //overwrites old data/records
 		
 		return this.mapper.mapToDTO(updatedHero); //Maps new data
 	}
