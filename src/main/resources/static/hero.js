@@ -22,6 +22,7 @@ function CountRows() {
         document.getElementById('addCharcterBtn').classList.add('btn', 'btn-primary');
         document.getElementById('submitBtn').classList.remove('btn', 'btn-secondary', 'disabled');
         document.getElementById('submitBtn').classList.add('btn', 'btn-outline-success');
+
     }
 }
 
@@ -73,6 +74,9 @@ const createOpenLink = (heroID) => {
 
 document.getElementById("form").addEventListener("submit", function (event) {
     event.preventDefault();
+    let createModal = document.getElementById('AddTeamModal');
+    let modal = bootstrap.Modal.getInstance(createModal);
+    modal.hide();
 
     const data = {
         name: this.name.value,
@@ -116,48 +120,44 @@ const deleteHero = async (id) => {
 
 const updateButton = (hero) => {
     const updateCell = document.createElement("td");
-    const updateHero = document.createElement("button");
-    updateHero.innerText = "Update";
-    updateHero.className = "btn btn-warning";
-    updateHero.setAttribute("type", "button");
-    updateHero.setAttribute("data-bs-toggle", "modal");
-    updateHero.setAttribute("data-bs-target", "#UpdateTeamModal")
-    updateHero.addEventListener("click", function (event) {
-        document.getElementById("name").value = hero.name;
-        document.getElementById("element").value = hero.element;
-        document.getElementById("weapon").value - hero.weapon;
-        document.getElementById("level").value = hero.level;
+    const updateHeroBtn = document.createElement("button");
+    updateHeroBtn.innerText = "Update";
+    updateHeroBtn.className = "btn btn-warning";
+    updateHeroBtn.setAttribute("type", "button");
+    updateHeroBtn.setAttribute("data-bs-toggle", "modal");
+    updateHeroBtn.setAttribute("data-bs-target", "#UpdateTeamModal")
+    updateHeroBtn.addEventListener("click", function (event) {
+        document.getElementById("updateName").value = hero.name;
+        document.getElementById("updateElement").value = hero.element;
+        document.getElementById("updateWeapon").value - hero.weapon;
+        document.getElementById("updateLevel").value = hero.level;
         document.getElementById("updateBtn").setAttribute("heroID", hero.id);
-
     });
-    updateCell.appendChild(updateHero);
+    updateCell.appendChild(updateHeroBtn);
     return updateCell;
 }
+getHeroes();
 
 document.getElementById("updateForm").addEventListener("submit", function (event) {
-    if (!this.checkValidity()) {
-        event.preventDefault();
-        event.stopPropagation();
-        console.log("form was not valid");
-        return;
-    }
-    this.classList.add('was-validated')
-    console.log("form was valid");
+    event.preventDefault();
+    let updateModal = document.getElementById('UpdateTeamModal');
+    let modal = bootstrap.Modal.getInstance(updateModal);
+    modal.hide();
 
     const heroID = document.getElementById("updateBtn").getAttribute("heroID");
     const data = {
-        name: this.name.value,
-        element: this.element.value,
-        weapon: this.weapon.value,
-        level: this.level.value
+        name: this.updateName.value,
+        element: this.updateElement.value,
+        weapon: this.updateWeapon.value,
+        level: this.updateLevel.value
     }
 
-    axios.put(`/hero/update/${heroID}`, data)
-        .then(function (response) {
-            console.log(response);
-        })
-        .catch(function (error) {
-            console.log(error);
-        });
+    axios.put(`/heroes/update/${heroID}`, data)
+        .then(res => {
+            getHeroes();
+            this.reset();
+            this.name.focus();
+        }).catch(err => console.log(err));
+
     console.log(this);
 });
