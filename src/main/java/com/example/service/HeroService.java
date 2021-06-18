@@ -6,6 +6,7 @@ import java.util.Optional;
 
 import javax.persistence.EntityNotFoundException;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import com.example.domain.Hero;
@@ -18,9 +19,9 @@ public class HeroService {
 
 	private HeroRepo repo;
 	
-	private HeroMapper mapper;
+	private ModelMapper mapper;
 	
-	public HeroService(HeroRepo repo, HeroMapper mapper) {
+	public HeroService(HeroRepo repo, ModelMapper mapper) {
 		super();
 		this.repo = repo;
 		this.mapper = mapper;
@@ -28,13 +29,13 @@ public class HeroService {
 	
 	public HeroDTO createHero(Hero hero) {
 		Hero newHero = this.repo.save(hero);
-		return this.mapper.mapToDTO(newHero);
+		return this.mapper.map(newHero, HeroDTO.class);
 	}
 	
 	public HeroDTO readCharacter(Long id) {
 		Optional<Hero> optionalCharacter = this.repo.findById(id);
 		Hero selected = optionalCharacter.orElseThrow(() -> new EntityNotFoundException());
-		return this.mapper.mapToDTO(selected);
+		return this.mapper.map(selected, HeroDTO.class);
 	} 
 	
 	public List<HeroDTO> getAllHeroes() {
@@ -43,7 +44,7 @@ public class HeroService {
 
 		HeroDTO dto = null;
 		for (Hero character : characters) {
-			dto = this.mapper.mapToDTO(character);
+			dto = this.mapper.map(character, HeroDTO.class);
 			dtos.add(dto);
 		}
 
@@ -64,7 +65,7 @@ public class HeroService {
 		
 		Hero updatedHero = this.repo.save(oldHero); //overwrites old data/records
 		
-		return this.mapper.mapToDTO(updatedHero); //Maps new data
+		return this.mapper.map(updatedHero, HeroDTO.class); //Maps new data
 	}
 	
 	public boolean delete (Long id) {

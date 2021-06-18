@@ -3,9 +3,11 @@
 const form = document.getElementById("output");
 
 const getTeams = async () => {
+    console.log("GTTING TEAMS");
     const tableBody = document.querySelector("tbody");
     tableBody.innerHTML = "";
     const teams = await axios.get("/team/");
+    console.log(teams.data);
     teams.data.forEach(team => {
         renderTeam(team);
     });
@@ -15,16 +17,15 @@ const renderTeam = team => {
 
     const newRow = document.createElement("tr");
 
-    // newRow.appendChild(createOpenLink(hero.id));
     newRow.appendChild(createTableCell(team.id));
-    newRow.appendChild(createTableCell(team.teamName));
+    newRow.appendChild(createTableCell(team.name));
+    newRow.appendChild(createOpenLink(team.id));
+
     newRow.appendChild(updateButton(team));
     newRow.appendChild(deleteButton(team.id));
 
     tableBody.appendChild(newRow);
 }
-
-getTeams();
 
 const createTableCell = (data) => {
     const cell = document.createElement("td");
@@ -33,16 +34,18 @@ const createTableCell = (data) => {
     return cell;
 }
 
-// const createOpenLink = (heroID) => {
-//     const cell = document.createElement("td");
-//     const openLink = document.createElement("a");
-//     openLink.innerText = "Open";
-//     openLink.className = "btn btn-success";
-//     openLink.href = `hero.html?id=${heroID}`
+const createOpenLink = (teamID) => {
+    const cell = document.createElement("td");
+    const openLink = document.createElement("a");
+    openLink.innerText = "View";
+    openLink.className = "btn btn-success";
+    openLink.href = `hero.html?id=${teamID}`
 
-//     cell.appendChild(openLink)
-//     return cell;
-// }
+    cell.appendChild(openLink)
+    return cell;
+}
+
+getTeams();
 
 document.getElementById("teamForm").addEventListener("submit", function (event) {
     event.preventDefault();
@@ -58,7 +61,6 @@ document.getElementById("teamForm").addEventListener("submit", function (event) 
         .then(res => {
             getTeams();
             this.reset();
-            this.name.focus();
         }).catch(err => console.log(err));
 
     console.log(this);
@@ -73,7 +75,6 @@ const deleteButton = (teamID) => {
     deleteButton.setAttribute("type", "submit");
     deleteButton.addEventListener("click", function (event) {
         deleteTeam(teamID);
-        totalRowCount--;
     });
 
     cell.appendChild(deleteButton);
@@ -83,7 +84,6 @@ const deleteButton = (teamID) => {
 const deleteTeam = async (id) => {
     const res = await axios.delete(`/team/remove/${id}`);
     getTeams(); //Can't create aysnc functions inside deleteButton so created separate method
-    CountRows();
 };
 
 const updateButton = (team) => {
@@ -95,14 +95,12 @@ const updateButton = (team) => {
     updateTeamBtn.setAttribute("data-bs-toggle", "modal");
     updateTeamBtn.setAttribute("data-bs-target", "#UpdateTeamModal")
     updateTeamBtn.addEventListener("click", function (event) {
-        document.getElementById("updateName").value = team.teamName;
-        document.getElementById("updateBtn").setAttribute("heroID", hero.id);
+        document.getElementById("updateTeamName").value = team.name;
+        document.getElementById("updateBtn").setAttribute("teamID", team.id);
     });
     updateCell.appendChild(updateTeamBtn);
     return updateCell;
 }
-getTeams();
-
 document.getElementById("updateTeamForm").addEventListener("submit", function (event) {
     event.preventDefault();
     let updateModal = document.getElementById('UpdateTeamModal');
@@ -118,7 +116,6 @@ document.getElementById("updateTeamForm").addEventListener("submit", function (e
         .then(res => {
             getTeams();
             this.reset();
-            this.name.focus();
         }).catch(err => console.log(err));
 
     console.log(this);

@@ -6,11 +6,11 @@ import java.util.Optional;
 
 import javax.persistence.EntityNotFoundException;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import com.example.domain.Team;
 import com.example.dto.TeamDTO;
-import com.example.mappers.TeamMapper;
 import com.example.repo.TeamRepo;
 
 @Service
@@ -18,9 +18,9 @@ public class TeamService {
 
 	private TeamRepo repo;
 
-	private TeamMapper mapper;
+	private ModelMapper mapper;
 
-	public TeamService(TeamRepo repo, TeamMapper mapper) {
+	public TeamService(TeamRepo repo, ModelMapper mapper) {
 		super();
 		this.repo = repo;
 		this.mapper = mapper;
@@ -28,13 +28,13 @@ public class TeamService {
 
 	public TeamDTO createTeam(Team team) {
 		Team saved = this.repo.save(team);
-		return this.mapper.mapToDTO(saved);
+		return this.mapper.map(saved, TeamDTO.class);
 	}
 
 	public TeamDTO findTeam(Long id) {
 		Optional<Team> optionalTeam = this.repo.findById(id);
 		Team found = optionalTeam.orElseThrow(() -> new EntityNotFoundException());
-		return this.mapper.mapToDTO(found);
+		return this.mapper.map(found, TeamDTO.class);
 	}
 
 	public TeamDTO updateTeam(Long id, Team newData) {
@@ -45,7 +45,7 @@ public class TeamService {
 
 		Team updated = this.repo.save(existing); //overwrites old data/records
 
-		return this.mapper.mapToDTO(updated); //Maps new data
+		return this.mapper.map(updated, TeamDTO.class); //Maps new data
 	}
 
 	public boolean delete(Long id) {
@@ -59,7 +59,7 @@ public class TeamService {
 		List<TeamDTO> dtos = new ArrayList<>();
 
 		for (Team g : Teams) {
-			TeamDTO dto = this.mapper.mapToDTO(g);
+			TeamDTO dto = this.mapper.map(g, TeamDTO.class);
 			dtos.add(dto);
 		}
 		return dtos;
