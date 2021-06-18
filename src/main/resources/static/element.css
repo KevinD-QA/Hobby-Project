@@ -1,4 +1,4 @@
-select#element option[value="Anemo"]   { background-image:url(C:\Users\kev30\eclipse-workspace\Hobby-Project\src\main\resources\static\Anemo.png);   }
+select#element option[value="Anemo"]   { background-image:url(Anemo.png);   }
 select#element option[value="Electro"] { background-image:url(Electro.png); }
 select#element option[value="Cryo"] { background-image:url(Cryo.png); }
 select#element option[value="Hydro"] { background-image:url(Hydro.png); }
