@@ -4,7 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-//import javax.persistence.ManyToOne;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Hero {
@@ -19,8 +19,8 @@ public class Hero {
 	private String element;
 	private Long level;
 	
-//	@ManyToOne
-//	private Team team;
+	@ManyToOne
+	private Team team;
 	
 	public Hero() {
 		super();

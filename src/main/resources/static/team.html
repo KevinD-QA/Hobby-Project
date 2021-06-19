@@ -8,47 +8,94 @@
     <title>Team Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-</head>
-</style>
+
 </head>
 
 <body>
-    <form class="form" id="form" action="" style="width: 500px; margin: auto">
-        <fieldset>
-            <legend>Character 1</legend>
-            <label for="name">Name: </label>
-            <input type="text" required autofocus class="form-control" id="name" />
-            <br>
-            <label for="element">Element: </label>
-            <select class=form-control id="element">
-                <option value="Anemo"> Anemo</option>
-                <option value="Electro"> Electro</option>
-                <option value="Cryo"> Cryo</option>
-                <option value="Hydro"> Hydro</option>
-                <option value="Geo"> Geo</option>
-                <option value="Pyro"> Pyro</option>
-            </select>
-            <br>
-            <label for="weapon">Weapon: </label>
-            <select class=form-control id="weapon">
-                <option value="Bow"> Bow</option>
-                <option value="Catalyst"> Catalyst</option>
-                <option value="Claymore"> Claymore</option>
-                <option value="Polearm"> Polearm</option>
-                <option value="Sword"> Sword</option>
-            </select>
-            <br>
-            <!-- Level <input type="range" min="1" max="100" step="2" value="50"> -->
-            <label for="name">Level: </label>
-            <input type="number" required autofocus class="form-control" id="level" />
-            <br>
-            <input class="btn btn-outline-danger" type="submit" />
-        </fieldset>
-    </form>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    <main class="container">
+        <div class="row">
+            <section class="col">
+                <!-- Button trigger modal -->
+                <a href="Homepage.html" id="backBtn" class="btn btn-info" type="submit">Go back</a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AddTeamModal"
+                    id="addTeamBtn">
+                    Add a Team
+                </button>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID:</th>
+                            <th scope="col">Team Name:</th>
+                        </tr>
+                    </thead>
+                    <tbody id="mainbody">
+                        <!-- Populate with the records -->
+                    </tbody>
+                </table>
+                <div class="modal fade" id="AddTeamModal" tabindex="-1" aria-labelledby="AddTeamModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="AddTeamModalLabel">New Team</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form" id="teamForm">
+                                    <label for="teamName" class="form-label">Please enter your team name:</label>
+                                    <input type="text" class="form-control" id="teamName">
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-dark"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <input name="submitBtn" id="submitBtn" class="btn btn-outline-success"
+                                            type="submit"></input>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <br>
+
+        <!-- Update Modal -->
+        <div class="modal fade" id="UpdateTeamModal" tabindex="-1" aria-labelledby="UpdateTeamModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="UpdateTeamModalLabel">Update Character</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form" id="updateTeamForm">
+                            <label for="teamName" class="form-label">Please enter your team name:</label>
+                            <input type="text" class="form-control" id="updateTeamName">
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-dark"
+                                    data-bs-dismiss="modal">Close</button>
+                                <button name="updateBtn" id="updateBtn" class="btn btn-outline-success"
+                                    type="submit">Update</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pt-10 my-10 text-muted border-top">
+        Genshin Heroes · © 2021
+    </footer>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
-    <script src="form.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="team.js"></script>
 </body>
 
 </html>
