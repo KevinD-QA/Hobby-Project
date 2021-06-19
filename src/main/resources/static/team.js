@@ -19,7 +19,7 @@ const renderTeam = team => {
 
     newRow.appendChild(createTableCell(team.id));
     newRow.appendChild(createTableCell(team.name));
-    newRow.appendChild(createOpenLink(team.id));
+    newRow.appendChild(viewButton(team.id));
 
     newRow.appendChild(updateButton(team));
     newRow.appendChild(deleteButton(team.id));
@@ -34,14 +34,15 @@ const createTableCell = (data) => {
     return cell;
 }
 
-const createOpenLink = (teamID) => {
-    const cell = document.createElement("td");
-    const openLink = document.createElement("a");
-    openLink.innerText = "View";
-    openLink.className = "btn btn-success";
-    openLink.href = `hero.html?id=${teamID}`
+const viewButton = (teamID) => {
+    const cell = document.createElement("a");
+    const viewButton = document.createElement("a");
+    viewButton.innerText = "View";
+    viewButton.className = "btn btn-success";
+    viewButton.width = "200px";
+    viewButton.href = `hero.html?id=${teamID}`
 
-    cell.appendChild(openLink)
+    cell.appendChild(viewButton)
     return cell;
 }
 
@@ -67,7 +68,7 @@ document.getElementById("teamForm").addEventListener("submit", function (event) 
 });
 
 const deleteButton = (teamID) => {
-    const cell = document.createElement("td");
+    const cell = document.createElement("a");
     const deleteButton = document.createElement("button");
     deleteButton.innerText = "Delete";
     deleteButton.className = "btn btn-danger";
@@ -87,7 +88,7 @@ const deleteTeam = async (id) => {
 };
 
 const updateButton = (team) => {
-    const updateCell = document.createElement("td");
+    const updateCell = document.createElement("a");
     const updateTeamBtn = document.createElement("button");
     updateTeamBtn.innerText = "Update";
     updateTeamBtn.className = "btn btn-warning";

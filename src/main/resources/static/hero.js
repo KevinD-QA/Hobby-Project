@@ -40,7 +40,6 @@ const renderHero = hero => {
 
     const newRow = document.createElement("tr");
 
-    // newRow.appendChild(createOpenLink(hero.id));
     newRow.appendChild(createTableCell(hero.id));
     newRow.appendChild(createTableCell(hero.name));
     newRow.appendChild(createTableCell(hero.element));
@@ -58,17 +57,6 @@ const createTableCell = (data) => {
     const cell = document.createElement("td");
     cell.innerText = data;
     cell.className = "align-middle";
-    return cell;
-}
-
-const createOpenLink = (heroID) => {
-    const cell = document.createElement("td");
-    const openLink = document.createElement("a");
-    openLink.innerText = "Open";
-    openLink.className = "btn btn-success";
-    openLink.href = `hero.html?id=${heroID}`
-
-    cell.appendChild(openLink)
     return cell;
 }
 
@@ -97,7 +85,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
 });
 
 const deleteButton = (heroID) => {
-    const cell = document.createElement("td");
+    const cell = document.createElement("a");
     const deleteButton = document.createElement("button");
     deleteButton.innerText = "Delete";
     deleteButton.className = "btn btn-danger";
@@ -119,7 +107,7 @@ const deleteHero = async (id) => {
 };
 
 const updateButton = (hero) => {
-    const updateCell = document.createElement("td");
+    const updateCell = document.createElement("a");
     const updateHeroBtn = document.createElement("button");
     updateHeroBtn.innerText = "Update";
     updateHeroBtn.className = "btn btn-warning";
