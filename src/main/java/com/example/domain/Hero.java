@@ -43,6 +43,16 @@ public class Hero {
 		this.level = level;
 	}
 	
+	public Hero(Long id, String name, String weapon, String element, Long level, Team team) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.weapon = weapon;
+		this.element = element;
+		this.level = level;
+		this.team = team;
+	}
+	
 	public Long getId() {
 		return id;
 	}
@@ -74,11 +84,20 @@ public class Hero {
 		this.level = level;
 	}
 	
+	public Team getTeam() {
+		return team;
+	}
+
+	public void setTeam(Team team) {
+		this.team = team;
+	}
+
 	@Override
 	public String toString() {
 		return "Character [id=" + id + ", name=" + name + ", weapon=" + weapon + ", element=" + element + ", level="
 				+ level + "]";
 	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -87,9 +106,11 @@ public class Hero {
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((level == null) ? 0 : level.hashCode());
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		result = prime * result + ((team == null) ? 0 : team.hashCode());
 		result = prime * result + ((weapon == null) ? 0 : weapon.hashCode());
 		return result;
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -119,6 +140,11 @@ public class Hero {
 				return false;
 		} else if (!name.equals(other.name))
 			return false;
+		if (team == null) {
+			if (other.team != null)
+				return false;
+		} else if (!team.equals(other.team))
+			return false;
 		if (weapon == null) {
 			if (other.weapon != null)
 				return false;
@@ -126,7 +152,5 @@ public class Hero {
 			return false;
 		return true;
 	}
-	
-	
 	
 }

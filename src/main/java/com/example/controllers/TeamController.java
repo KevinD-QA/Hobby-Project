@@ -17,7 +17,7 @@ import com.example.dto.TeamDTO;
 import com.example.service.TeamService;
 
 @RestController
-@RequestMapping("/team")
+@RequestMapping("/teams")
 public class TeamController {
 
 	private TeamService service;
@@ -29,13 +29,8 @@ public class TeamController {
 	}
 
 	@PostMapping("/create")
-	public TeamDTO createTeam(@RequestBody Team team) {
-		return this.service.createTeam(team);
-	}
-
-	@GetMapping("/find/{id}")
-	public TeamDTO find(@PathVariable Long id) {
-		return this.service.findTeam(id);
+	public TeamDTO createTeam(@RequestBody TeamDTO teamDTO) {
+		return this.service.createTeam(teamDTO);
 	}
 
 	@GetMapping("/")
@@ -50,7 +45,7 @@ public class TeamController {
 
 	@DeleteMapping("/remove/{id}")
 	public boolean delete(@PathVariable Long id) {
-		return this.service.delete(id);
+		return this.service.deleteTeam(id);
 	}
 
 }

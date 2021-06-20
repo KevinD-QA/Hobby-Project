@@ -1,0 +1,1 @@
+Insert Into Teams (teamID, teamName) VALUES (1, 'Zhongli King') 

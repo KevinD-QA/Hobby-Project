@@ -57,11 +57,12 @@ document.getElementById("teamForm").addEventListener("submit", function (event) 
     const data = {
         name: this.teamName.value,
     }
-
-    axios.post("/team/create", data)
+    axios.post("/teams/create", data)
         .then(res => {
+            console.log("why why why");
             getTeams();
             this.reset();
+            console.log("Create working?");
         }).catch(err => console.log(err));
 
     console.log(this);

@@ -1,0 +1,1 @@
+Insert into `Heroes` (`heroID`, `heroName`, `Element`, `Weapon`,`Levels`) VALUES (1, 'Zhongli', 'Geo', 'Polearm', 90)
