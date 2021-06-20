@@ -1,0 +1,105 @@
+package com.example.service;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.ActiveProfiles;
+
+import com.example.domain.Hero;
+import com.example.dto.HeroDTO;
+import com.example.repo.HeroRepo;
+
+@SpringBootTest
+@ActiveProfiles("test")
+public class HeroServiceTest {
+	
+	@Autowired
+	private HeroService service;
+
+	@MockBean
+	private HeroRepo repo;
+	
+	@MockBean
+	private ModelMapper mapper;
+
+	@BeforeAll
+	static void setUpBeforeClass() throws Exception {
+	}
+
+	@AfterAll
+	static void tearDownAfterClass() throws Exception {
+	}
+	
+	@Test
+	public void testHeroService() {
+		HeroService hService = new HeroService(repo, mapper);
+		assertThat(hService).isInstanceOf(HeroService.class);
+	}
+	
+	@Test
+	public void testCreateHero() {
+		//Given
+		Hero newHero = new Hero("Ganyu", "Cryo", "Bow", 90l);
+		Hero newHero2 = new Hero(1l, "Ganyu", "Cryo", "Bow", 90l);
+		HeroDTO heroDTO = new HeroDTO(1l, "Ganyu", "Cryo", "Bow", 90l);
+		
+		//When
+		Mockito.when(this.mapper.map(heroDTO, Hero.class)).thenReturn(newHero);
+		Mockito.when(this.repo.save(newHero)).thenReturn(newHero2);
+		Mockito.when(this.mapper.map(newHero2, HeroDTO.class)).thenReturn(heroDTO);
+		//Then
+		assertThat(this.service.createHero(newHero)).isEqualTo(heroDTO);
+		Mockito.verify(this.repo, Mockito.times(1)).save(newHero);
+	}
+	
+	@Test
+	public void testReadHero() {
+		//Given
+		List<Hero> heroes = new ArrayList<>();
+		Hero hero1 = new Hero(1l, "Eula", "Cryo", "Claymore", 80l);
+		Hero hero2 = new Hero(2l, "Ningguang", "Geo", "Book", 85l);
+		heroes.add(hero1);
+		heroes.add(hero2);
+		
+		List<HeroDTO> heroesDTO = new ArrayList<>();
+		HeroDTO heroDTO1 = new HeroDTO(1l, "Eula", "Cryo", "Claymore", 80l);
+		HeroDTO heroDTO2 = new HeroDTO(2l, "Ningguang", "Geo", "Book", 85l);
+		heroesDTO.add(heroDTO1);
+		heroesDTO.add(heroDTO2);
+		
+		//When
+		Mockito.when(this.repo.findAll()).thenReturn(heroes);
+		Mockito.when(this.mapper.map(heroDTO1, HeroDTO.class)).thenReturn(heroDTO1);
+		Mockito.when(this.mapper.map(heroDTO2, HeroDTO.class)).thenReturn(heroDTO2);		
+		
+		//Then
+		//assertThat(this.service.readHero(1l)).isEqualTo(heroesDTO);
+		//Mockito.verify(this.repository, Mockito.times(1)).findByElement("Cryo");
+//		Mockito.verify(this.mapper, Mockito.times(1)).map(hero1, HeroDTO.class);
+//		Mockito.verify(this.mapper, Mockito.times(1)).map(hero2, HeroDTO.class);
+	}
+		
+		@Test
+		public void testDeleteTask() {
+			//Given
+			Long heroID = 1L;
+
+			//When
+			Mockito.when(this.repo.existsById(heroID)).thenReturn(false);
+
+			//Then
+			assertThat(this.service.delete(heroID)).isTrue();
+			Mockito.verify(this.repo, Mockito.times(1)).existsById(heroID);
+		}
+
+}
