@@ -45,6 +45,6 @@ public class HeroController {
 	
 	@DeleteMapping("/remove/{id}")
 	public boolean delete(@PathVariable Long id) {
-		return this.service.delete(id);
+		return this.service.deleteHero(id);
 	}
 }

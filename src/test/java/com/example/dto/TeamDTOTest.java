@@ -60,8 +60,8 @@ public class TeamDTOTest {
 	@Test
 	public void testEquals() {
 		TeamDTO teamDto1 = new TeamDTO(1L, "Best bois");
-		TeamDTO teamDto2 = new TeamDTO(1L, "best bois");
-
+		TeamDTO teamDto2 = new TeamDTO(1L, "Best bois");
+		
 		assertTrue(teamDto1.equals(teamDto2) && teamDto2.equals(teamDto1));
 	}
 	

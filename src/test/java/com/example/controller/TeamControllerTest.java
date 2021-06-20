@@ -75,11 +75,11 @@ public class TeamControllerTest {
 		Long testID = 1l;
 		
 		//When
-		Mockito.when(this.service.delete(testID)).thenReturn(true);
+		Mockito.when(this.service.deleteTeam(testID)).thenReturn(true);
 		
 		//Then
 		assertThat(this.controller.delete(testID)).isEqualTo(true);
-		Mockito.verify(this.service, Mockito.times(1)).delete(testID);
+		Mockito.verify(this.service, Mockito.times(1)).deleteTeam(testID);
 	}
 
 }

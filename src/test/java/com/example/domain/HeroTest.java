@@ -73,6 +73,14 @@ public class HeroTest {
 	}
 	
 	@Test
+	public void testSetGetTeam() {
+		hero.setTeam(null);
+	    Team result = hero.getTeam();
+	    Team team = null;
+	    assertEquals(team, result);
+	}
+	
+	@Test
 	public void testHero() {
 		Hero hero = new Hero();
 		assertThat(hero).isInstanceOf(Hero.class);

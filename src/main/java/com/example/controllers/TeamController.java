@@ -33,11 +33,6 @@ public class TeamController {
 		return this.service.createTeam(team);
 	}
 
-	@GetMapping("/find/{id}")
-	public TeamDTO find(@PathVariable Long id) {
-		return this.service.findTeam(id);
-	}
-
 	@GetMapping("/")
 	public List<TeamDTO> getTeams() {
 		return this.service.getTeams();
@@ -50,7 +45,7 @@ public class TeamController {
 
 	@DeleteMapping("/remove/{id}")
 	public boolean delete(@PathVariable Long id) {
-		return this.service.delete(id);
+		return this.service.deleteTeam(id);
 	}
 
 }

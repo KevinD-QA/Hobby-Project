@@ -11,7 +11,6 @@ import org.springframework.stereotype.Service;
 
 import com.example.domain.Hero;
 import com.example.dto.HeroDTO;
-import com.example.mappers.HeroMapper;
 import com.example.repo.HeroRepo;
 
 @Service
@@ -32,11 +31,11 @@ public class HeroService {
 		return this.mapper.map(newHero, HeroDTO.class);
 	}
 	
-	public HeroDTO readCharacter(Long id) {
-		Optional<Hero> optionalCharacter = this.repo.findById(id);
-		Hero selected = optionalCharacter.orElseThrow(() -> new EntityNotFoundException());
-		return this.mapper.map(selected, HeroDTO.class);
-	} 
+//	public HeroDTO readCharacter(Long id) {
+//		Optional<Hero> optionalCharacter = this.repo.findById(id);
+//		Hero selected = optionalCharacter.orElseThrow(() -> new EntityNotFoundException());
+//		return this.mapper.map(selected, HeroDTO.class);
+//	} 
 	
 	public List<HeroDTO> getAllHeroes() {
 		List<Hero> characters = this.repo.findAll();
@@ -51,10 +50,6 @@ public class HeroService {
 		return dtos;
 	}
 	
-//	public List<Character> findByElement(String element) {
-//		return this.repo.findByElement(element);
-//	} //CHANGE TO READ
-//	
 	public HeroDTO updateHeroes(Long id, Hero newHero) {
 		Hero oldHero = this.repo.findById(id).orElseThrow(() -> new EntityNotFoundException()); //Fetches character that exists
 		
@@ -68,7 +63,7 @@ public class HeroService {
 		return this.mapper.map(updatedHero, HeroDTO.class); //Maps new data
 	}
 	
-	public boolean delete (Long id) {
+	public boolean deleteHero (Long id) {
 		this.repo.deleteById(id);
 		return !this.repo.existsById(id);
 	}
