@@ -1,8 +1,7 @@
 package com.example.service;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
+import java.util.stream.Collectors;
 
 import javax.persistence.EntityNotFoundException;
 
@@ -31,23 +30,19 @@ public class HeroService {
 		return this.mapper.map(newHero, HeroDTO.class);
 	}
 	
-//	public HeroDTO readCharacter(Long id) {
-//		Optional<Hero> optionalCharacter = this.repo.findById(id);
-//		Hero selected = optionalCharacter.orElseThrow(() -> new EntityNotFoundException());
-//		return this.mapper.map(selected, HeroDTO.class);
-//	} 
-	
 	public List<HeroDTO> getAllHeroes() {
-		List<Hero> characters = this.repo.findAll();
-		List<HeroDTO> dtos = new ArrayList<>();
+//		List<Hero> characters = this.repo.findAll();
+//		List<HeroDTO> dtos = new ArrayList<>();
+//
+//		HeroDTO dto = null;
+//		for (Hero character : characters) {
+//			dto = this.mapper.map(character, HeroDTO.class);
+//			dtos.add(dto);
+//		}
+//
+//		return dtos;
+		return this.repo.findAll().stream().map(hero -> this.mapper.map(hero, HeroDTO.class)).collect(Collectors.toList());
 
-		HeroDTO dto = null;
-		for (Hero character : characters) {
-			dto = this.mapper.map(character, HeroDTO.class);
-			dtos.add(dto);
-		}
-
-		return dtos;
 	}
 	
 	public HeroDTO updateHeroes(Long id, Hero newHero) {
@@ -57,6 +52,7 @@ public class HeroService {
 		oldHero.setElement(newHero.getElement());
 		oldHero.setWeapon(newHero.getWeapon());
 		oldHero.setLevel(newHero.getLevel());
+		oldHero.setTeam(newHero.getTeam());
 		
 		Hero updatedHero = this.repo.save(oldHero); //overwrites old data/records
 		

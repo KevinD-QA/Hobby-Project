@@ -2,7 +2,6 @@ package com.example.service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 import javax.persistence.EntityNotFoundException;
 
@@ -26,16 +25,12 @@ public class TeamService {
 		this.mapper = mapper;
 	}
 
-	public TeamDTO createTeam(Team team) {
-		Team saved = this.repo.save(team);
+	public TeamDTO createTeam(TeamDTO teamDTO) {
+		var teams = this.mapper.map(teamDTO, Team.class);
+		Team saved = this.repo.save(teams);
 		return this.mapper.map(saved, TeamDTO.class);
 	}
 
-//	public TeamDTO findTeam(Long id) {
-//		Optional<Team> optionalTeam = this.repo.findById(id);
-//		Team found = optionalTeam.orElseThrow(() -> new EntityNotFoundException());
-//		return this.mapper.map(found, TeamDTO.class);
-//	}
 	public List<TeamDTO> getTeams() {
 		List<Team> Teams = this.repo.findAll();
 

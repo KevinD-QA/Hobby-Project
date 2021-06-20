@@ -4,12 +4,16 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+import java.util.List;
+
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
+
+import com.example.domain.Hero;
 
 
 @SpringBootTest
@@ -48,6 +52,13 @@ public class TeamDTOTest {
 		assertEquals(name, result);
 	}
 	
+	@Test
+	public void testSetGetHeroes() {
+		teamDTO.setHeroes(null);
+	    List<HeroDTO> result = teamDTO.getHeroes();
+	    List<HeroDTO> heroes = (null);	   
+		assertEquals(heroes, result);
+	}
 	
 	@Test
 	public void testHashCode() {
@@ -66,15 +77,15 @@ public class TeamDTOTest {
 	}
 	
 	@Test 
-	public void testHeroDTO() {
-		HeroDTO heroDto1 = new HeroDTO();
-		assertThat(heroDto1).isInstanceOf(HeroDTO.class);
+	public void testTeamDTO() {
+		TeamDTO teamDTO = new TeamDTO();
+		assertThat(teamDTO).isInstanceOf(TeamDTO.class);
 	}
 	
 	@Test 
-	public void testHeroDTO1() {
-		HeroDTO heroDto1 = new HeroDTO("Hu Tao", "Pyro", "Polarm", 90l);
-		assertThat(heroDto1).isInstanceOf(HeroDTO.class);
+	public void testTeamDTO1() {
+		TeamDTO teamDTO = new TeamDTO("Team big dmg");
+		assertThat(teamDTO).isInstanceOf(TeamDTO.class);
 	}
 	
 }

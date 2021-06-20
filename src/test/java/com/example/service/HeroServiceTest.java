@@ -4,6 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -88,6 +89,25 @@ public class HeroServiceTest {
 //		Mockito.verify(this.mapper, Mockito.times(1)).map(hero1, HeroDTO.class);
 //		Mockito.verify(this.mapper, Mockito.times(1)).map(hero2, HeroDTO.class);
 	}
+	@Test
+	void testUpdate() {
+		//Given
+		Hero testData = new Hero("Eula", "Cryo", "Claymore", 80l);
+		Hero hero = new Hero(1L, "Ningguang", "Geo", "Book", 85l);
+		Hero updatedHero = new Hero(1l, "Eula", "Cryo", "Claymore", 80l);
+		HeroDTO updatedDTO = new HeroDTO(1L, "Eula", "Cryo", "Claymore", 80l);
+
+		//When
+		Long testID = 1l;
+		Mockito.when(this.repo.findById(testID)).thenReturn(Optional.of(hero));
+		Mockito.when(this.repo.save(updatedHero)).thenReturn(updatedHero);
+
+		//Then
+//		assertThat(this.service.updateHeroes(testID, testData)).isEqualTo(updatedDTO);
+//
+//		Mockito.verify(this.repo, Mockito.times(1)).findById(testID);
+//		Mockito.verify(this.repo, Mockito.times(1)).save(updatedHero);
+	}
 		
 		@Test
 		public void testDeleteTask() {
@@ -98,7 +118,7 @@ public class HeroServiceTest {
 			Mockito.when(this.repo.existsById(heroID)).thenReturn(false);
 
 			//Then
-			assertThat(this.service.delete(heroID)).isTrue();
+			assertThat(this.service.deleteHero(heroID)).isTrue();
 			Mockito.verify(this.repo, Mockito.times(1)).existsById(heroID);
 		}
 

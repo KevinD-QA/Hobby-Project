@@ -29,15 +29,15 @@ public class TeamControllerTest {
 	@Test
 	void testCreateTeam() {
 		//Given
-		Team testTeam = new Team("Team Pyro");
+		Team testTeam = new Team(1l,"Team Pyro");
 		TeamDTO newDTO = new TeamDTO(1l, "Team Pyro");
 		
 		//When
-		Mockito.when(this.service.createTeam(testTeam)).thenReturn(newDTO);
+		Mockito.when(this.service.createTeam(newDTO)).thenReturn(newDTO);
 		
 		//Then
-		assertThat(this.controller.createTeam(testTeam)).isEqualTo(newDTO);
-		Mockito.verify(this.service, Mockito.times(1)).createTeam(testTeam);
+		assertThat(this.controller.createTeam(newDTO)).isEqualTo(newDTO);
+		Mockito.verify(this.service, Mockito.times(1)).createTeam(newDTO);
 	}
 	
 	@Test

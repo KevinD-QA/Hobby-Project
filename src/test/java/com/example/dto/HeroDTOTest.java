@@ -77,7 +77,7 @@ public class HeroDTOTest {
 		HeroDTO heroDto1 = new HeroDTO(1L, "Hu Tao", "Pyro", "Polarm", 90l);
 		HeroDTO heroDto2 = new HeroDTO(1L, "Hu Tao", "Pyro", "Polarm", 90l);
 
-		//assertEquals(heroDto1.hashCode(), heroDto2.hashCode());
+		assertEquals(heroDto1.hashCode(), heroDto2.hashCode());
 	}
 	
 	@Test

@@ -22,8 +22,9 @@ public class Team {
 
 	@OneToMany(mappedBy = "team")
 	@JsonIgnore
-	private static List<Hero> heroes;
+	private List<Hero> heroes;
 
+	
 	public Team(Long id, String name, List<Hero> heroes) {
 		super();
 		this.id = id;
@@ -31,6 +32,12 @@ public class Team {
 		this.heroes = heroes;
 	}
 	
+
+	public Team(Long id) {
+		super();
+		this.id = id;
+	}
+
 
 	public Team(Long id, String name) {
 		super();
@@ -59,7 +66,7 @@ public class Team {
 		this.name = name;
 	}
 
-	public static List<Hero> getHeroes() {
+	public List<Hero> getHeroes() {
 		return heroes;
 	}
 

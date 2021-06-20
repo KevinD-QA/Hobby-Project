@@ -50,13 +50,6 @@ public class TeamTest {
 	    assertEquals(name, result);
 	}
 	
-	@Test
-	public void testSetGetHeroes() {
-		List<Hero> tasks = new ArrayList<>();
-		tasks.add(new Hero(1L, "Hu Tao", "Pyro", "Polarm", 90l));
-		team.setHeroes(tasks);
-		assertThat(Team.getHeroes()).isEqualTo(tasks);
-	}
 	
 	@Test
 	public void testTeam() {
