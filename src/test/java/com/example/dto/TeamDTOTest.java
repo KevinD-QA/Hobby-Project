@@ -13,8 +13,6 @@ import org.mockito.InjectMocks;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
-import com.example.domain.Hero;
-
 
 @SpringBootTest
 @ActiveProfiles("test")
@@ -32,12 +30,12 @@ class TeamDTOTest {
 	static void tearDownAfterClass() throws Exception {
 	}
 	@Test
-	public void testDomain() {
+	 void testDomain() {
 		assertTrue(teamDTO instanceof TeamDTO);
 	}
 	
 	@Test
-	public void testSetGetID() {
+	 void testSetGetID() {
 		teamDTO.setId(1l);
 	    Long result = teamDTO.getId();
 	    Long id = 1l;
@@ -45,7 +43,7 @@ class TeamDTOTest {
 	}
 	
 	@Test
-	public void testSetGetName() {
+	 void testSetGetName() {
 		teamDTO.setName("Team Zhongli daddy");
 	    String result = teamDTO.getName();
 		String name = ("Team Zhongli daddy");	   
@@ -53,7 +51,7 @@ class TeamDTOTest {
 	}
 	
 	@Test
-	public void testSetGetHeroes() {
+	 void testSetGetHeroes() {
 		teamDTO.setHeroes(null);
 	    List<HeroDTO> result = teamDTO.getHeroes();
 	    List<HeroDTO> heroes = (null);	   
@@ -61,7 +59,7 @@ class TeamDTOTest {
 	}
 	
 	@Test
-	public void testHashCode() {
+	 void testHashCode() {
 		TeamDTO teamDto1 = new TeamDTO(1L, "Best bois");
 		TeamDTO teamDto2 = new TeamDTO(1L, "Best bois");
 
@@ -69,7 +67,7 @@ class TeamDTOTest {
 	}
 	
 	@Test
-	public void testEquals() {
+	 void testEquals() {
 		TeamDTO teamDto1 = new TeamDTO(1L, "Best bois");
 		TeamDTO teamDto2 = new TeamDTO(1L, "Best bois");
 		
@@ -77,13 +75,13 @@ class TeamDTOTest {
 	}
 	
 	@Test 
-	public void testTeamDTO() {
+	 void testTeamDTO() {
 		TeamDTO teamDTO = new TeamDTO();
 		assertThat(teamDTO).isInstanceOf(TeamDTO.class);
 	}
 	
 	@Test 
-	public void testTeamDTO1() {
+	 void testTeamDTO1() {
 		TeamDTO teamDTO = new TeamDTO("Team big dmg");
 		assertThat(teamDTO).isInstanceOf(TeamDTO.class);
 	}
