@@ -6,7 +6,7 @@ const getTeams = async () => {
     console.log("GTTING TEAMS");
     const tableBody = document.querySelector("tbody");
     tableBody.innerHTML = "";
-    const teams = await axios.get("/team/");
+    const teams = await axios.get("/teams/");
     console.log(teams.data);
     teams.data.forEach(team => {
         renderTeam(team);
@@ -84,7 +84,7 @@ const deleteButton = (teamID) => {
 }
 
 const deleteTeam = async (id) => {
-    const res = await axios.delete(`/team/remove/${id}`);
+    const res = await axios.delete(`/teams/remove/${id}`);
     getTeams(); //Can't create aysnc functions inside deleteButton so created separate method
 };
 
@@ -114,7 +114,7 @@ document.getElementById("updateTeamForm").addEventListener("submit", function (e
         name: this.updateTeamName.value,
     }
 
-    axios.put(`/team/update/${teamID}`, data)
+    axios.put(`/teams/update/${teamID}`, data)
         .then(res => {
             getTeams();
             this.reset();

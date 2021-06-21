@@ -1,5 +1,6 @@
 package com.example.dto;
 
+
 public class HeroDTO {
 	
 	private Long id;

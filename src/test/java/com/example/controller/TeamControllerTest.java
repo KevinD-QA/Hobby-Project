@@ -12,13 +12,14 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.ActiveProfiles;
 
 import com.example.controllers.TeamController;
-import com.example.domain.Team;
 import com.example.dto.TeamDTO;
 import com.example.service.TeamService;
 
+
+
 @SpringBootTest
 @ActiveProfiles("test")
-public class TeamControllerTest {
+class TeamControllerTest {
 
 	@Autowired
 	private TeamController controller;
@@ -29,7 +30,7 @@ public class TeamControllerTest {
 	@Test
 	void testCreateTeam() {
 		//Given
-		Team testTeam = new Team(1l,"Team Pyro");
+		//Team testTeam = new Team(1l,"Team Pyro");
 		TeamDTO newDTO = new TeamDTO(1l, "Team Pyro");
 		
 		//When
@@ -57,16 +58,16 @@ public class TeamControllerTest {
 	@Test
 	void testUpdateTeam() {
 		//Given
-		Team updateTeam = new Team("Zhongli Daddy");
-		TeamDTO updateDTO = new TeamDTO(1l, "Zhongli Daddy");
+		TeamDTO updateDTO = new TeamDTO("Zhongli Daddy");
 		
 		//When
 		Long testID = 1l;
-		Mockito.when(this.service.updateTeam(testID, updateTeam)).thenReturn(updateDTO);
+		TeamDTO updateDTO2 = new TeamDTO(1l, "Zhongli Daddy");
+		Mockito.when(this.service.updateTeam(testID, updateDTO)).thenReturn(updateDTO2);
 		
 		//Then
-		assertThat(this.service.updateTeam(testID, updateTeam)).isEqualTo(updateDTO);
-		Mockito.verify(this.service, Mockito.times(1)).updateTeam(testID, updateTeam);
+		assertThat(this.service.updateTeam(testID, updateDTO)).isEqualTo(updateDTO2);
+		Mockito.verify(this.service, Mockito.times(1)).updateTeam(testID, updateDTO);
 	}
 	
 	@Test

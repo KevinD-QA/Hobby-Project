@@ -8,7 +8,16 @@
     <title>Hero Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
+    <style>
+        body {
+            /* background-image: url('Characters.jpg'); */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            text-align: center;
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,8 +26,8 @@
             <section class="col">
                 <a href="team.html" id="backBtn" class="btn btn-info" type="submit">Go back</a>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AddTeamModal"
-                    onclick="CountRows()" id="addCharcterBtn">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AddCharacterModal"
+                    onclick="CountRows()" id="addCharacterBtn">
                     Add a Character
                 </button>
                 <table class="table">
@@ -35,12 +44,12 @@
                         <!-- Populate with the records -->
                     </tbody>
                 </table>
-                <div class="modal fade" id="AddTeamModal" tabindex="-1" aria-labelledby="AddTeamModalLabel"
+                <div class="modal fade" id="AddCharacterModal" tabindex="-1" aria-labelledby="AddCharcterModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="AddTeamModalLabel">New Character</h5>
+                                <h5 class="modal-title" id="AddTeaAddCharcterModalLabelmModalLabel">New Character</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -71,7 +80,7 @@
                                     <br>
                                     <label for="name">Level: </label>
                                     <input type="number" required class="form-control" id="level" name="level" min="10"
-                                        max="90" value="10" />
+                                        max="90" />
                                     <br>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-outline-dark"
@@ -89,12 +98,12 @@
         <br>
 
         <!-- Update Modal -->
-        <div class="modal fade" id="UpdateTeamModal" tabindex="-1" aria-labelledby="UpdateTeamModalLabel"
+        <div class="modal fade" id="UpdateCharacterModal" tabindex="-1" aria-labelledby="UpdateCharacterModalLabel"
             aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="UpdateTeamModalLabel">Update Character</h5>
+                        <h5 class="modal-title" id="UpdateCharacterModalLabel">Update Character</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">

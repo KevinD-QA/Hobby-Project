@@ -22,7 +22,7 @@ import com.example.repo.HeroRepo;
 
 @SpringBootTest
 @ActiveProfiles("test")
-public class HeroServiceTest {
+class HeroServiceTest {
 	
 	@Autowired
 	private HeroService service;
@@ -42,13 +42,13 @@ public class HeroServiceTest {
 	}
 	
 	@Test
-	public void testHeroService() {
+	 void testHeroService() {
 		HeroService hService = new HeroService(repo, mapper);
 		assertThat(hService).isInstanceOf(HeroService.class);
 	}
 	
 	@Test
-	public void testCreateHero() {
+	 void testCreateHero() {
 		//Given
 		Hero newHero = new Hero("Ganyu", "Cryo", "Bow", 90l);
 		Hero newHero2 = new Hero(1l, "Ganyu", "Cryo", "Bow", 90l);
@@ -59,12 +59,12 @@ public class HeroServiceTest {
 		Mockito.when(this.repo.save(newHero)).thenReturn(newHero2);
 		Mockito.when(this.mapper.map(newHero2, HeroDTO.class)).thenReturn(heroDTO);
 		//Then
-		assertThat(this.service.createHero(newHero)).isEqualTo(heroDTO);
+		assertThat(this.service.createHero(heroDTO)).isEqualTo(heroDTO);
 		Mockito.verify(this.repo, Mockito.times(1)).save(newHero);
 	}
 	
 	@Test
-	public void testReadHero() {
+	 void testReadHero() {
 		//Given
 		List<Hero> heroes = new ArrayList<>();
 		Hero hero1 = new Hero(1l, "Eula", "Cryo", "Claymore", 80l);
@@ -110,7 +110,7 @@ public class HeroServiceTest {
 	}
 		
 		@Test
-		public void testDeleteTask() {
+		 void testDeleteTask() {
 			//Given
 			Long heroID = 1L;
 

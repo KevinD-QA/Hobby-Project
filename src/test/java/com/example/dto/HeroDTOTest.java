@@ -14,7 +14,7 @@ import org.springframework.test.context.ActiveProfiles;
 
 @SpringBootTest
 @ActiveProfiles("test")
-public class HeroDTOTest {
+class HeroDTOTest {
 
 	
 	@InjectMocks
@@ -28,12 +28,12 @@ public class HeroDTOTest {
 	static void tearDownAfterClass() throws Exception {
 	}
 	@Test
-	public void testDomain() {
+	 void testDomain() {
 		assertTrue(herodto instanceof HeroDTO);
 	}
 	
 	@Test
-	public void testSetGetID() {
+	 void testSetGetID() {
 		herodto.setId(1l);
 	    Long result = herodto.getId();
 	    Long id = 1l;
@@ -41,7 +41,7 @@ public class HeroDTOTest {
 	}
 	
 	@Test
-	public void testSetGetName() {
+	 void testSetGetName() {
 		herodto.setName("Zhongli");
 	    String result = herodto.getName();
 		String name = ("Zhongli");	   
@@ -49,7 +49,7 @@ public class HeroDTOTest {
 	}
 	
 	@Test
-	public void testSetGetElement() {
+	 void testSetGetElement() {
 		herodto.setElement("Geo");
 	    String result = herodto.getElement();
 		String element = ("Geo");	   
@@ -57,7 +57,7 @@ public class HeroDTOTest {
 	}
 	
 	@Test
-	public void testSetGetWeapon() {
+	 void testSetGetWeapon() {
 		herodto.setWeapon("Polearm");
 	    String result = herodto.getWeapon();
 		String weapon = ("Polearm");	   
@@ -65,7 +65,7 @@ public class HeroDTOTest {
 	}
 	
 	@Test
-	public void testSetGetLevel() {
+	 void testSetGetLevel() {
 		herodto.setLevel(90l);
 	    Long result = herodto.getLevel();
 		Long level = (90l);	   
@@ -73,7 +73,7 @@ public class HeroDTOTest {
 	}
 	
 	@Test
-	public void testHashCode() {
+	 void testHashCode() {
 		HeroDTO heroDto1 = new HeroDTO(1L, "Hu Tao", "Pyro", "Polarm", 90l);
 		HeroDTO heroDto2 = new HeroDTO(1L, "Hu Tao", "Pyro", "Polarm", 90l);
 
@@ -81,7 +81,7 @@ public class HeroDTOTest {
 	}
 	
 	@Test
-	public void testEquals() {
+	 void testEquals() {
 		HeroDTO heroDto1 = new HeroDTO(1L, "Hu Tao", "Pyro", "Polarm", 90l);
 		HeroDTO heroDto2 = new HeroDTO(1L, "Hu Tao", "Pyro", "Polarm", 90l);
 
@@ -89,13 +89,13 @@ public class HeroDTOTest {
 	}
 	
 	@Test 
-	public void testHeroDTO() {
+	 void testHeroDTO() {
 		HeroDTO heroDto1 = new HeroDTO();
 		assertThat(heroDto1).isInstanceOf(HeroDTO.class);
 	}
 	
 	@Test 
-	public void testHeroDTO1() {
+	 void testHeroDTO1() {
 		HeroDTO heroDto1 = new HeroDTO("Hu Tao", "Pyro", "Polarm", 90l);
 		assertThat(heroDto1).isInstanceOf(HeroDTO.class);
 	}

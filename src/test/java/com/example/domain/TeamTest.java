@@ -1,11 +1,9 @@
 package com.example.domain;
 
-import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -16,7 +14,7 @@ import org.springframework.test.context.ActiveProfiles;
 
 @SpringBootTest
 @ActiveProfiles("test")
-public class TeamTest {
+class TeamTest {
 
 	@InjectMocks
 	static Team team;
@@ -30,12 +28,12 @@ public class TeamTest {
 	}
 	
 	@Test
-	public void testDomain() {
+	 void testDomain() {
 		assertTrue(team instanceof Team);
 	}
 	
 	@Test
-	public void testSetGetID() {
+	 void testSetGetID() {
 		team.setId(1l);
 	    Long result = team.getId();
 	    Long id = 1l;
@@ -43,7 +41,7 @@ public class TeamTest {
 	}
 	
 	@Test
-	public void testSetGetName() {
+	 void testSetGetName() {
 		team.setName("Team BangBang");
 	    String result = team.getName();
 	    String name = "Team BangBang";
@@ -52,19 +50,19 @@ public class TeamTest {
 	
 	
 	@Test
-	public void testTeam() {
+	 void testTeam() {
 		Team team = new Team("Team Geo");
 		assertTrue(team instanceof Team);	
 	}
 	
 	@Test
-	public void testTeam2() {
+	 void testTeam2() {
 		Team team = new Team(1l, "Team Geo");
 		assertTrue(team instanceof Team);	
 	}
 	
 	@Test
-	public void testHashCode() {
+	 void testHashCode() {
 		
 		Team  team1 = new Team(1L, "Geo Brothers");
 		Team team2 = new Team(1L, "Geo Brothers");
