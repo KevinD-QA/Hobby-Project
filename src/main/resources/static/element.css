@@ -1,6 +1,0 @@
-select#element option[value="Anemo"]   { background-image:url(Anemo.png);   }
-select#element option[value="Electro"] { background-image:url(Electro.png); }
-select#element option[value="Cryo"] { background-image:url(Cryo.png); }
-select#element option[value="Hydro"] { background-image:url(Hydro.png); }
-select#element option[value="Geo"] { background-image:url(Geo.png); }
-select#element option[value="Pyro"] { background-image:url(Pyro.png); }

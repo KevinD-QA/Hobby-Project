@@ -6,20 +6,20 @@ var totalRowCount = 0;
 var rowCount = 0;
 
 function CountRows() {
-    let modalActive = !(document.getElementById('AddTeamModal').style.display === "none");
+    let modalActive = !(document.getElementById('AddCharacterModal').style.display === "none");
     let table = document.getElementById("mainbody");
     let rows = table.getElementsByTagName("tr");
 
     console.log(totalRowCount + " row length");
     if (rows.length > 2) {
-        document.getElementById('addCharcterBtn').classList.remove('btn', 'btn-primary');
-        document.getElementById('addCharcterBtn').classList.add('btn', 'btn-primary', 'disabled');
+        document.getElementById('addCharacterBtn').classList.remove('btn', 'btn-primary');
+        document.getElementById('addCharacterBtn').classList.add('btn', 'btn-primary', 'disabled');
         document.getElementById('submitBtn').classList.remove('btn', 'btn-outline-success');
         document.getElementById('submitBtn').classList.add('btn', 'btn-secondary', 'disabled');
     }
     if ((rows.length < 4) && !modalActive) {
-        document.getElementById('addCharcterBtn').classList.remove('btn', 'btn-primary', 'disabled');
-        document.getElementById('addCharcterBtn').classList.add('btn', 'btn-primary');
+        document.getElementById('addCharacterBtn').classList.remove('btn', 'btn-primary', 'disabled');
+        document.getElementById('addCharacterBtn').classList.add('btn', 'btn-primary');
         document.getElementById('submitBtn').classList.remove('btn', 'btn-secondary', 'disabled');
         document.getElementById('submitBtn').classList.add('btn', 'btn-outline-success');
 
@@ -62,7 +62,7 @@ const createTableCell = (data) => {
 
 document.getElementById("form").addEventListener("submit", function (event) {
     event.preventDefault();
-    let createModal = document.getElementById('AddTeamModal');
+    let createModal = document.getElementById('AddCharacterModal');
     let modal = bootstrap.Modal.getInstance(createModal);
     modal.hide();
 
@@ -113,7 +113,7 @@ const updateButton = (hero) => {
     updateHeroBtn.className = "btn btn-warning";
     updateHeroBtn.setAttribute("type", "button");
     updateHeroBtn.setAttribute("data-bs-toggle", "modal");
-    updateHeroBtn.setAttribute("data-bs-target", "#UpdateTeamModal")
+    updateHeroBtn.setAttribute("data-bs-target", "#UpdateCharacterModal")
     updateHeroBtn.addEventListener("click", function (event) {
         document.getElementById("updateName").value = hero.name;
         document.getElementById("updateElement").value = hero.element;
@@ -128,7 +128,7 @@ getHeroes();
 
 document.getElementById("updateForm").addEventListener("submit", function (event) {
     event.preventDefault();
-    let updateModal = document.getElementById('UpdateTeamModal');
+    let updateModal = document.getElementById('UpdateCharacterModal');
     let modal = bootstrap.Modal.getInstance(updateModal);
     modal.hide();
 

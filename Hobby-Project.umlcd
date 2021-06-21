@@ -1,0 +1,1674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_Vs_eYNJnEeuQPePjrCY5Vw">
+  <modelElement href="Hobby-Project.uml#_WI9osNJnEeuQPePjrCY5Vw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_dZlWoNJnEeuQPePjrCY5Vw" sourceAnchor="238.0,0.0" targetAnchor="291.0,272.0" target="_dZpBCNJnEeuQPePjrCY5Vw" source="_deY-INJnEeuQPePjrCY5Vw">
+    <modelElement href="Hobby-Project.uml#_WYIGENJnEeuQPePjrCY5Vw"/>
+    <stereotypes xmi:id="_dZlWodJnEeuQPePjrCY5Vw" name="Reference">
+      <modelElement href="Hobby-Project.uml#_WYOMsNJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_dZlWotJnEeuQPePjrCY5Vw" text="">
+      <visualProperties xmi:id="_d69lYdJnEeuQPePjrCY5Vw" position="31.0,-27.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_dZlWo9JnEeuQPePjrCY5Vw" aggregationKind="NONE" name="">
+      <modelElement href="Hobby-Project.uml#_WYIGEdJnEeuQPePjrCY5Vw"/>
+      <visualProperties xmi:id="_d69lYNJnEeuQPePjrCY5Vw" position="2.0,-50.0"/>
+      <visibility xmi:id="_dZlWpNJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dZlWpdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_dZlWptJnEeuQPePjrCY5Vw" aggregationKind="NONE" name="heroes" navigable="true">
+      <modelElement href="Hobby-Project.uml#_WWAmMtJnEeuQPePjrCY5Vw"/>
+      <visualProperties xmi:id="_d69lYtJnEeuQPePjrCY5Vw" position="-91.0,1.0"/>
+      <stereotypes xmi:id="_dZlWp9JnEeuQPePjrCY5Vw" name="LegacyStyledElement">
+        <modelElement href="Hobby-Project.uml#_WWBNQNJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_dZlWqNJnEeuQPePjrCY5Vw" name="Annotations">
+        <modelElement href="Hobby-Project.uml#_WWB0U9JnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dZlWqdJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dZlWqtJnEeuQPePjrCY5Vw" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_dZpBANJnEeuQPePjrCY5Vw" sourceAnchor="270.0,0.0" targetAnchor="323.0,272.0" target="_dZpBCNJnEeuQPePjrCY5Vw" source="_deY-INJnEeuQPePjrCY5Vw">
+    <modelElement href="Hobby-Project.uml#_WWiKoNJnEeuQPePjrCY5Vw"/>
+    <nameVisual xmi:id="_dZpBAdJnEeuQPePjrCY5Vw" text="">
+      <visualProperties xmi:id="_d6-McdJnEeuQPePjrCY5Vw" position="2.0,-3.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_dZpBAtJnEeuQPePjrCY5Vw" aggregationKind="NONE" name="team" navigable="true">
+      <modelElement href="Hobby-Project.uml#_WWGFxtJnEeuQPePjrCY5Vw"/>
+      <visualProperties xmi:id="_d6-McNJnEeuQPePjrCY5Vw" position="46.0,-46.0"/>
+      <visibility xmi:id="_dZpBA9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dZpBBNJnEeuQPePjrCY5Vw" label="0..1" max="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_dZpBBdJnEeuQPePjrCY5Vw" aggregationKind="NONE" name="">
+      <modelElement href="Hobby-Project.uml#_WWhjk9JnEeuQPePjrCY5Vw"/>
+      <visualProperties xmi:id="_d6-MctJnEeuQPePjrCY5Vw" position="-63.0,1.0"/>
+      <visibility xmi:id="_dZpBBtJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dZpBB9JnEeuQPePjrCY5Vw" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_daIwQNJnEeuQPePjrCY5Vw" sourceAnchor="0.0,80.0" targetAnchor="433.0,86.0" target="_dc6XcNJnEeuQPePjrCY5Vw" source="_daZO8NJnEeuQPePjrCY5Vw">
+    <modelElement href="Hobby-Project.uml#_WW1soNJnEeuQPePjrCY5Vw"/>
+    <stereotypes xmi:id="_daIwQdJnEeuQPePjrCY5Vw" name="Reference">
+      <modelElement href="Hobby-Project.uml#_WW7zQNJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_daIwQtJnEeuQPePjrCY5Vw" text="">
+      <visualProperties xmi:id="_d67JINJnEeuQPePjrCY5Vw" position="-23.66666666666663,-18.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_daIwQ9JnEeuQPePjrCY5Vw" aggregationKind="NONE" name="">
+      <modelElement href="Hobby-Project.uml#_WW1sodJnEeuQPePjrCY5Vw"/>
+      <visualProperties xmi:id="_d66iEdJnEeuQPePjrCY5Vw" position="-27.200000000000045,2.5"/>
+      <visibility xmi:id="_daIwRNJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_daIwRdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_daIwRtJnEeuQPePjrCY5Vw" aggregationKind="NONE" name="service" navigable="true">
+      <modelElement href="Hobby-Project.uml#_WV21MNJnEeuQPePjrCY5Vw"/>
+      <visualProperties xmi:id="_d67wMNJnEeuQPePjrCY5Vw" position="1.0,-85.5"/>
+      <visibility xmi:id="_daIwR9JnEeuQPePjrCY5Vw" label="-"/>
+      <cardinality xmi:id="_daIwSNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_dbh3YNJnEeuQPePjrCY5Vw" sourceAnchor="0.0,43.0" targetAnchor="299.0,42.0" target="_dcEC4tJnEeuQPePjrCY5Vw" source="_dc6XcNJnEeuQPePjrCY5Vw">
+    <modelElement href="Hobby-Project.uml#_WXVb4dJnEeuQPePjrCY5Vw"/>
+    <stereotypes xmi:id="_dcDb09JnEeuQPePjrCY5Vw" name="Reference">
+      <modelElement href="Hobby-Project.uml#_WXbigNJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_dcDb0NJnEeuQPePjrCY5Vw" text="">
+      <visualProperties xmi:id="_d68-UNJnEeuQPePjrCY5Vw" position="-26.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_dcDb0dJnEeuQPePjrCY5Vw" aggregationKind="NONE" name="">
+      <modelElement href="Hobby-Project.uml#_WXVb4tJnEeuQPePjrCY5Vw"/>
+      <visualProperties xmi:id="_d67wMdJnEeuQPePjrCY5Vw" position="-27.0,-47.0"/>
+      <visibility xmi:id="_dcDb1dJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dcDb1NJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_dcDb0tJnEeuQPePjrCY5Vw" aggregationKind="NONE" name="repo" navigable="true">
+      <modelElement href="Hobby-Project.uml#_WV6fktJnEeuQPePjrCY5Vw"/>
+      <visualProperties xmi:id="_d68-UdJnEeuQPePjrCY5Vw" position="14.0,-47.0"/>
+      <visibility xmi:id="_dcEC4dJnEeuQPePjrCY5Vw" label="-"/>
+      <cardinality xmi:id="_dcEC4NJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_dcb2UNJnEeuQPePjrCY5Vw" source="_dc6XcNJnEeuQPePjrCY5Vw">
+    <modelElement href="Hobby-Project.uml#_WXbigdJnEeuQPePjrCY5Vw"/>
+    <stereotypes xmi:id="_dc5JUtJnEeuQPePjrCY5Vw" name="Reference">
+      <modelElement href="Hobby-Project.uml#_WXhCENJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_dc4iQNJnEeuQPePjrCY5Vw" text=""/>
+    <sourceRole xmi:id="_dc5JUNJnEeuQPePjrCY5Vw" aggregationKind="NONE" name="">
+      <modelElement href="Hobby-Project.uml#_WXbigtJnEeuQPePjrCY5Vw"/>
+      <visibility xmi:id="_dc5wYdJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dc5wYNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_dc5JUdJnEeuQPePjrCY5Vw" aggregationKind="NONE" name="mapper" navigable="true">
+      <modelElement href="Hobby-Project.uml#_WV6fk9JnEeuQPePjrCY5Vw"/>
+      <visibility xmi:id="_dc5wY9JnEeuQPePjrCY5Vw" label="-"/>
+      <cardinality xmi:id="_dc5wYtJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_dffKUNJnEeuQPePjrCY5Vw" sourceAnchor="0.0,16.0" targetAnchor="439.0,41.0" target="_dlE09NJnEeuQPePjrCY5Vw" source="_dgQmYNJnEeuQPePjrCY5Vw">
+    <modelElement href="Hobby-Project.uml#_WY0podJnEeuQPePjrCY5Vw"/>
+    <stereotypes xmi:id="_dffKUdJnEeuQPePjrCY5Vw" name="Reference">
+      <modelElement href="Hobby-Project.uml#_WY3s8NJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_dffKUtJnEeuQPePjrCY5Vw" text="">
+      <visualProperties xmi:id="_d6_akNJnEeuQPePjrCY5Vw" position="-34.0,-19.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_dffKU9JnEeuQPePjrCY5Vw" aggregationKind="NONE" name="">
+      <modelElement href="Hobby-Project.uml#_WY0potJnEeuQPePjrCY5Vw"/>
+      <visualProperties xmi:id="_d6-zgNJnEeuQPePjrCY5Vw" position="-30.0,-47.0"/>
+      <visibility xmi:id="_dffKVNJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dffKVdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_dffKVtJnEeuQPePjrCY5Vw" aggregationKind="NONE" name="service" navigable="true">
+      <modelElement href="Hobby-Project.uml#_WWMMY9JnEeuQPePjrCY5Vw"/>
+      <visualProperties xmi:id="_d6_akdJnEeuQPePjrCY5Vw" position="39.0,1.9999999999999432"/>
+      <visibility xmi:id="_dffKV9JnEeuQPePjrCY5Vw" label="-"/>
+      <cardinality xmi:id="_dffKWNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_dhTIMNJnEeuQPePjrCY5Vw" sourceAnchor="380.0,110.0" targetAnchor="0.0,115.0" target="_davNMNJnEeuQPePjrCY5Vw" source="_diLR8NJnEeuQPePjrCY5Vw">
+    <modelElement href="Hobby-Project.uml#_WX2ZQdJnEeuQPePjrCY5Vw"/>
+    <stereotypes xmi:id="_diJcwtJnEeuQPePjrCY5Vw" name="Reference">
+      <modelElement href="Hobby-Project.uml#_WX740NJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_diI1sNJnEeuQPePjrCY5Vw" text="">
+      <visualProperties xmi:id="_d7ABodJnEeuQPePjrCY5Vw" position="-24.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_diJcwNJnEeuQPePjrCY5Vw" aggregationKind="NONE" name="">
+      <modelElement href="Hobby-Project.uml#_WX2ZQtJnEeuQPePjrCY5Vw"/>
+      <visualProperties xmi:id="_d7ABoNJnEeuQPePjrCY5Vw" position="11.0,-47.0"/>
+      <visibility xmi:id="_diKq4dJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_diKq4NJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_diJcwdJnEeuQPePjrCY5Vw" aggregationKind="NONE" name="heroes" navigable="true">
+      <modelElement href="Hobby-Project.uml#_WV870tJnEeuQPePjrCY5Vw"/>
+      <visualProperties xmi:id="_d7ABotJnEeuQPePjrCY5Vw" position="-51.0,41.0"/>
+      <visibility xmi:id="_diKq49JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_diKq4tJnEeuQPePjrCY5Vw" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_djKJYNJnEeuQPePjrCY5Vw" sourceAnchor="439.0,101.0" targetAnchor="0.0,27.0" target="_dkC6NtJnEeuQPePjrCY5Vw" source="_dlE09NJnEeuQPePjrCY5Vw">
+    <modelElement href="Hobby-Project.uml#_WXhCEdJnEeuQPePjrCY5Vw"/>
+    <stereotypes xmi:id="_dkC6MdJnEeuQPePjrCY5Vw" name="Reference">
+      <modelElement href="Hobby-Project.uml#_WXnIsNJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_dkCTINJnEeuQPePjrCY5Vw" text="">
+      <visualProperties xmi:id="_d7BPwNJnEeuQPePjrCY5Vw" position="-13.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_dkCTIdJnEeuQPePjrCY5Vw" aggregationKind="NONE" name="">
+      <modelElement href="Hobby-Project.uml#_WXhCEtJnEeuQPePjrCY5Vw"/>
+      <visualProperties xmi:id="_d7AosNJnEeuQPePjrCY5Vw" position="12.0,-47.0"/>
+      <visibility xmi:id="_dkC6M9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dkC6MtJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_dkC6MNJnEeuQPePjrCY5Vw" aggregationKind="NONE" name="repo" navigable="true">
+      <modelElement href="Hobby-Project.uml#_WV7GoNJnEeuQPePjrCY5Vw"/>
+      <visualProperties xmi:id="_d7BPwdJnEeuQPePjrCY5Vw" position="-40.0,41.0"/>
+      <visibility xmi:id="_dkC6NdJnEeuQPePjrCY5Vw" label="-"/>
+      <cardinality xmi:id="_dkC6NNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_dkb7wNJnEeuQPePjrCY5Vw" source="_dlE09NJnEeuQPePjrCY5Vw">
+    <modelElement href="Hobby-Project.uml#_WXnIsdJnEeuQPePjrCY5Vw"/>
+    <stereotypes xmi:id="_dlEN49JnEeuQPePjrCY5Vw" name="Reference">
+      <modelElement href="Hobby-Project.uml#_WXsBMNJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_dlEN4NJnEeuQPePjrCY5Vw" text=""/>
+    <sourceRole xmi:id="_dlEN4dJnEeuQPePjrCY5Vw" aggregationKind="NONE" name="">
+      <modelElement href="Hobby-Project.uml#_WXnIstJnEeuQPePjrCY5Vw"/>
+      <visibility xmi:id="_dlE08dJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dlE08NJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_dlEN4tJnEeuQPePjrCY5Vw" aggregationKind="NONE" name="mapper" navigable="true">
+      <modelElement href="Hobby-Project.uml#_WV7GodJnEeuQPePjrCY5Vw"/>
+      <visibility xmi:id="_dlE089JnEeuQPePjrCY5Vw" label="-"/>
+      <cardinality xmi:id="_dlE08tJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_dcEC4tJnEeuQPePjrCY5Vw" name="HeroRepo" associationsIn="_dbh3YNJnEeuQPePjrCY5Vw">
+    <modelElement href="Hobby-Project.uml#_WLmtANJnEeuQPePjrCY5Vw"/>
+    <visualProperties xmi:id="_dcEC49JnEeuQPePjrCY5Vw" position="81.0,778.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_dcEC5NJnEeuQPePjrCY5Vw" name="LegacyStyledElement">
+      <modelElement href="Hobby-Project.uml#_WLn7INJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <stereotypes xmi:id="_dcEC5dJnEeuQPePjrCY5Vw" name="Annotations">
+      <modelElement href="Hobby-Project.uml#_WLpwUNJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <visibility xmi:id="_dcEC5tJnEeuQPePjrCY5Vw" label="+"/>
+    <operations xmi:id="_dcEC59JnEeuQPePjrCY5Vw" name="findByElement">
+      <modelElement href="Hobby-Project.uml#_WLoiMNJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_dcEC6NJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WLpJQtJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dcEC6dJnEeuQPePjrCY5Vw" label="~"/>
+      <cardinality xmi:id="_dcEC6tJnEeuQPePjrCY5Vw" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_dcEC69JnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WLpJQNJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dcEC7NJnEeuQPePjrCY5Vw" name="Hero">
+          <modelElement href="Hobby-Project.uml#_WMNxANJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_dcEC7dJnEeuQPePjrCY5Vw" name="Element">
+        <modelElement href="Hobby-Project.uml#_WLoiMdJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dcEC7tJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dcEC79JnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_deY-INJnEeuQPePjrCY5Vw" name="Team" associationsOut="_dZlWoNJnEeuQPePjrCY5Vw _dZpBANJnEeuQPePjrCY5Vw">
+    <modelElement href="Hobby-Project.uml#_WMHDUNJnEeuQPePjrCY5Vw"/>
+    <visualProperties xmi:id="_deY-IdJnEeuQPePjrCY5Vw" position="138.0,506.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_deY-ItJnEeuQPePjrCY5Vw" name="JPA1StyledElement">
+      <modelElement href="Hobby-Project.uml#_WMIRcNJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <visibility xmi:id="_deY-I9JnEeuQPePjrCY5Vw" label="+"/>
+    <attributes xmi:id="_deY-JNJnEeuQPePjrCY5Vw" name="id">
+      <modelElement href="Hobby-Project.uml#_WV-xA9JnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_deY-JdJnEeuQPePjrCY5Vw" name="PrimaryKey">
+        <modelElement href="Hobby-Project.uml#_WV_YENJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_deY-JtJnEeuQPePjrCY5Vw" name="GeneratedValueMapping">
+        <modelElement href="Hobby-Project.uml#_WV_YEdJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_deY-J9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_deY-KNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <type xmi:id="_deY-KdJnEeuQPePjrCY5Vw" name="Long">
+        <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_deY-KtJnEeuQPePjrCY5Vw" name="name">
+      <modelElement href="Hobby-Project.uml#_WWAmMNJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_deY-K9JnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WWAmMdJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_deY-LNJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_deY-LdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <type xmi:id="_deY-LtJnEeuQPePjrCY5Vw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_deY-L9JnEeuQPePjrCY5Vw" name="heroes">
+      <modelElement href="Hobby-Project.uml#_WWAmMtJnEeuQPePjrCY5Vw"/>
+      <visibility xmi:id="_deY-MNJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_deY-MdJnEeuQPePjrCY5Vw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_deY-MtJnEeuQPePjrCY5Vw" name="Hero">
+        <modelElement href="Hobby-Project.uml#_WMNxANJnEeuQPePjrCY5Vw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_deY-M9JnEeuQPePjrCY5Vw" name="Team">
+      <modelElement href="Hobby-Project.uml#_WMI4gNJnEeuQPePjrCY5Vw"/>
+      <keywords xmi:id="_deY-NNJnEeuQPePjrCY5Vw" keyword="create"/>
+      <stereotypes xmi:id="_deY-NdJnEeuQPePjrCY5Vw" name="LegacyStyledElement">
+        <modelElement href="Hobby-Project.uml#_WMJfktJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_deY-NtJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_deY-N9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_deY-ONJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WMJfk9JnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_deY-OdJnEeuQPePjrCY5Vw" name="Team">
+          <modelElement href="Hobby-Project.uml#_WMHDUNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_deY-OtJnEeuQPePjrCY5Vw" name="Team">
+      <modelElement href="Hobby-Project.uml#_WMKGoNJnEeuQPePjrCY5Vw"/>
+      <keywords xmi:id="_deY-O9JnEeuQPePjrCY5Vw" keyword="create"/>
+      <stereotypes xmi:id="_deY-PNJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WMKttNJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_deY-PdJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_deY-PtJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_deY-P9JnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WMKts9JnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_deY-QNJnEeuQPePjrCY5Vw" name="Team">
+          <modelElement href="Hobby-Project.uml#_WMHDUNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_deY-QdJnEeuQPePjrCY5Vw" name="name">
+        <modelElement href="Hobby-Project.uml#_WMKtsNJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_deY-QtJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_deY-Q9JnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_deY-RNJnEeuQPePjrCY5Vw" name="hashCode">
+      <modelElement href="Hobby-Project.uml#_WMKttdJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_deY-RdJnEeuQPePjrCY5Vw" name="LegacyStyledElement">
+        <modelElement href="Hobby-Project.uml#_WMLUwNJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_deY-RtJnEeuQPePjrCY5Vw" name="Annotations">
+        <modelElement href="Hobby-Project.uml#_WMLUwdJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_deY-R9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_deY-SNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_deY-SdJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WMKtttJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_deY-StJnEeuQPePjrCY5Vw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_deY-S9JnEeuQPePjrCY5Vw" name="Team">
+      <modelElement href="Hobby-Project.uml#_WVg28NJnEeuQPePjrCY5Vw"/>
+      <keywords xmi:id="_deY-TNJnEeuQPePjrCY5Vw" keyword="create"/>
+      <stereotypes xmi:id="_deY-TdJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WVg299JnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_deY-TtJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_deY-T9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_deY-UNJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVg29tJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_deY-UdJnEeuQPePjrCY5Vw" name="Team">
+          <modelElement href="Hobby-Project.uml#_WMHDUNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_deY-UtJnEeuQPePjrCY5Vw" name="id">
+        <modelElement href="Hobby-Project.uml#_WVg28dJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_deY-U9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_deY-VNJnEeuQPePjrCY5Vw" name="Long">
+          <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_deY-VdJnEeuQPePjrCY5Vw" name="name">
+        <modelElement href="Hobby-Project.uml#_WVg28tJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_deY-VtJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_deY-V9JnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_deY-WNJnEeuQPePjrCY5Vw" name="heroes">
+        <modelElement href="Hobby-Project.uml#_WVg289JnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_deY-WdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_deY-WtJnEeuQPePjrCY5Vw" name="List">
+          <modelElement href="Hobby-Project.uml#_WRddYNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_deY-W9JnEeuQPePjrCY5Vw" name="Team">
+      <modelElement href="Hobby-Project.uml#_WVlIYNJnEeuQPePjrCY5Vw"/>
+      <keywords xmi:id="_deY-XNJnEeuQPePjrCY5Vw" keyword="create"/>
+      <stereotypes xmi:id="_deY-XdJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WVlvcNJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_deY-XtJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_deY-X9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_deY-YNJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVlIZNJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_deY-YdJnEeuQPePjrCY5Vw" name="Team">
+          <modelElement href="Hobby-Project.uml#_WMHDUNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_deY-YtJnEeuQPePjrCY5Vw" name="id">
+        <modelElement href="Hobby-Project.uml#_WVlIYdJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_deY-Y9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_deY-ZNJnEeuQPePjrCY5Vw" name="Long">
+          <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_deY-ZdJnEeuQPePjrCY5Vw" name="Team">
+      <modelElement href="Hobby-Project.uml#_WVlvcdJnEeuQPePjrCY5Vw"/>
+      <keywords xmi:id="_deY-ZtJnEeuQPePjrCY5Vw" keyword="create"/>
+      <stereotypes xmi:id="_deY-Z9JnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WVlvd9JnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_deY-aNJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_deY-adJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_deY-atJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVlvdtJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_deY-a9JnEeuQPePjrCY5Vw" name="Team">
+          <modelElement href="Hobby-Project.uml#_WMHDUNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_deY-bNJnEeuQPePjrCY5Vw" name="id">
+        <modelElement href="Hobby-Project.uml#_WVlvctJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_deY-bdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_deY-btJnEeuQPePjrCY5Vw" name="Long">
+          <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_deY-b9JnEeuQPePjrCY5Vw" name="name">
+        <modelElement href="Hobby-Project.uml#_WVlvc9JnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_deY-cNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_deY-cdJnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_deY-ctJnEeuQPePjrCY5Vw" name="equals">
+      <modelElement href="Hobby-Project.uml#_WVmWgNJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_deY-c9JnEeuQPePjrCY5Vw" name="LegacyStyledElement">
+        <modelElement href="Hobby-Project.uml#_WVmWg9JnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_deY-dNJnEeuQPePjrCY5Vw" name="Annotations">
+        <modelElement href="Hobby-Project.uml#_WVmWhNJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_deY-ddJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_deY-dtJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_deY-d9JnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVmWgtJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_deY-eNJnEeuQPePjrCY5Vw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_deY-edJnEeuQPePjrCY5Vw" name="obj">
+        <modelElement href="Hobby-Project.uml#_WVmWgdJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_deY-etJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_deY-e9JnEeuQPePjrCY5Vw" name="Object">
+          <modelElement href="Hobby-Project.uml#_WVEyENJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_dc6XcNJnEeuQPePjrCY5Vw" name="HeroService" associationsIn="_daIwQNJnEeuQPePjrCY5Vw" associationsOut="_dbh3YNJnEeuQPePjrCY5Vw _dcb2UNJnEeuQPePjrCY5Vw">
+    <modelElement href="Hobby-Project.uml#_WLsMkNJnEeuQPePjrCY5Vw"/>
+    <visualProperties xmi:id="_dc6XcdJnEeuQPePjrCY5Vw" position="459.0,777.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_dc6XctJnEeuQPePjrCY5Vw" name="LegacyStyledElement">
+      <modelElement href="Hobby-Project.uml#_WLsMkdJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <stereotypes xmi:id="_dc6Xc9JnEeuQPePjrCY5Vw" name="Annotations">
+      <modelElement href="Hobby-Project.uml#_WLuo0NJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <visibility xmi:id="_dc6XdNJnEeuQPePjrCY5Vw" label="+"/>
+    <attributes xmi:id="_dc6XddJnEeuQPePjrCY5Vw" name="repo">
+      <modelElement href="Hobby-Project.uml#_WV6fktJnEeuQPePjrCY5Vw"/>
+      <visibility xmi:id="_dc6XdtJnEeuQPePjrCY5Vw" label="-"/>
+      <cardinality xmi:id="_dc6Xd9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <type xmi:id="_dc6XeNJnEeuQPePjrCY5Vw" name="HeroRepo">
+        <modelElement href="Hobby-Project.uml#_WLmtANJnEeuQPePjrCY5Vw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_dc6XedJnEeuQPePjrCY5Vw" name="mapper">
+      <modelElement href="Hobby-Project.uml#_WV6fk9JnEeuQPePjrCY5Vw"/>
+      <visibility xmi:id="_dc6XetJnEeuQPePjrCY5Vw" label="-"/>
+      <cardinality xmi:id="_dc6Xe9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <type xmi:id="_dc6XfNJnEeuQPePjrCY5Vw" name="ModelMapper">
+        <modelElement href="Hobby-Project.uml#_WRPa8NJnEeuQPePjrCY5Vw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_dc6XfdJnEeuQPePjrCY5Vw" name="getAllHeroes">
+      <modelElement href="Hobby-Project.uml#_WLtasNJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_dc6XftJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WLuBwNJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dc6Xf9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dc6XgNJnEeuQPePjrCY5Vw" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_dc6XgdJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WLtasdJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dc6XgtJnEeuQPePjrCY5Vw" name="HeroDTO">
+          <modelElement href="Hobby-Project.uml#_WLWOUNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_dc6Xg9JnEeuQPePjrCY5Vw" name="createHero">
+      <modelElement href="Hobby-Project.uml#_WTkWMNJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_dc6XhNJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WTkWM9JnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dc6XhdJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dc6XhtJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_dc6Xh9JnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WTkWMtJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dc6XiNJnEeuQPePjrCY5Vw" name="HeroDTO">
+          <modelElement href="Hobby-Project.uml#_WLWOUNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_dc6XidJnEeuQPePjrCY5Vw" name="heroDTO">
+        <modelElement href="Hobby-Project.uml#_WTkWMdJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dc6XitJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dc6Xi9JnEeuQPePjrCY5Vw" name="HeroDTO">
+          <modelElement href="Hobby-Project.uml#_WLWOUNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_dc6XjNJnEeuQPePjrCY5Vw" name="HeroService">
+      <modelElement href="Hobby-Project.uml#_WVWe4NJnEeuQPePjrCY5Vw"/>
+      <keywords xmi:id="_dc6XjdJnEeuQPePjrCY5Vw" keyword="create"/>
+      <stereotypes xmi:id="_dc6XjtJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WVXF8NJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dc6Xj9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dc6XkNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_dc6XkdJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVWe5dJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dc6XktJnEeuQPePjrCY5Vw" name="HeroService">
+          <modelElement href="Hobby-Project.uml#_WLsMkNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_dc6Xk9JnEeuQPePjrCY5Vw" name="repo">
+        <modelElement href="Hobby-Project.uml#_WVWe4dJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dc6XlNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dc6XldJnEeuQPePjrCY5Vw" name="HeroRepo">
+          <modelElement href="Hobby-Project.uml#_WLmtANJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_dc6XltJnEeuQPePjrCY5Vw" name="mapper">
+        <modelElement href="Hobby-Project.uml#_WVWe4tJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dc6Xl9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dc6XmNJnEeuQPePjrCY5Vw" name="ModelMapper">
+          <modelElement href="Hobby-Project.uml#_WRPa8NJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_dc6XmdJnEeuQPePjrCY5Vw" name="updateHeroes">
+      <modelElement href="Hobby-Project.uml#_WVXF8dJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_dc6XmtJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WVXF9dJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dc6Xm9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dc6XnNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_dc6XndJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVXF9NJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dc6XntJnEeuQPePjrCY5Vw" name="HeroDTO">
+          <modelElement href="Hobby-Project.uml#_WLWOUNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_dc6Xn9JnEeuQPePjrCY5Vw" name="id">
+        <modelElement href="Hobby-Project.uml#_WVXF8tJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dc6XoNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dc6XodJnEeuQPePjrCY5Vw" name="Long">
+          <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_dc6XotJnEeuQPePjrCY5Vw" name="newHero">
+        <modelElement href="Hobby-Project.uml#_WVXF89JnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dc6Xo9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dc6XpNJnEeuQPePjrCY5Vw" name="HeroDTO">
+          <modelElement href="Hobby-Project.uml#_WLWOUNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_dc6XpdJnEeuQPePjrCY5Vw" name="deleteHero">
+      <modelElement href="Hobby-Project.uml#_WVXF9tJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_dc6XptJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WVXtAdJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dc6Xp9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dc6XqNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_dc6XqdJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVXtANJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dc6XqtJnEeuQPePjrCY5Vw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_dc6Xq9JnEeuQPePjrCY5Vw" name="id">
+        <modelElement href="Hobby-Project.uml#_WVXF99JnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dc6XrNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dc6XrdJnEeuQPePjrCY5Vw" name="Long">
+          <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_davNMNJnEeuQPePjrCY5Vw" name="HeroDTO" associationsIn="_dhTIMNJnEeuQPePjrCY5Vw">
+    <modelElement href="Hobby-Project.uml#_WLWOUNJnEeuQPePjrCY5Vw"/>
+    <visualProperties xmi:id="_davNMdJnEeuQPePjrCY5Vw" position="967.0,495.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_davNMtJnEeuQPePjrCY5Vw" label="+"/>
+    <attributes xmi:id="_davNM9JnEeuQPePjrCY5Vw" name="id">
+      <modelElement href="Hobby-Project.uml#_WV4qYtJnEeuQPePjrCY5Vw"/>
+      <visibility xmi:id="_davNNNJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_davNNdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <type xmi:id="_davNNtJnEeuQPePjrCY5Vw" name="Long">
+        <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_davNN9JnEeuQPePjrCY5Vw" name="name">
+      <modelElement href="Hobby-Project.uml#_WV4qY9JnEeuQPePjrCY5Vw"/>
+      <visibility xmi:id="_davNONJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_davNOdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <type xmi:id="_davNOtJnEeuQPePjrCY5Vw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_davNO9JnEeuQPePjrCY5Vw" name="weapon">
+      <modelElement href="Hobby-Project.uml#_WV5RcNJnEeuQPePjrCY5Vw"/>
+      <visibility xmi:id="_davNPNJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_davNPdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <type xmi:id="_davNPtJnEeuQPePjrCY5Vw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_davNP9JnEeuQPePjrCY5Vw" name="element">
+      <modelElement href="Hobby-Project.uml#_WV5RcdJnEeuQPePjrCY5Vw"/>
+      <visibility xmi:id="_davNQNJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_davNQdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <type xmi:id="_davNQtJnEeuQPePjrCY5Vw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_davNQ9JnEeuQPePjrCY5Vw" name="level">
+      <modelElement href="Hobby-Project.uml#_WV5RctJnEeuQPePjrCY5Vw"/>
+      <visibility xmi:id="_davNRNJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_davNRdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <type xmi:id="_davNRtJnEeuQPePjrCY5Vw" name="Long">
+        <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_davNR9JnEeuQPePjrCY5Vw" name="HeroDTO">
+      <modelElement href="Hobby-Project.uml#_WLXccNJnEeuQPePjrCY5Vw"/>
+      <keywords xmi:id="_davNSNJnEeuQPePjrCY5Vw" keyword="create"/>
+      <stereotypes xmi:id="_davNSdJnEeuQPePjrCY5Vw" name="LegacyStyledElement">
+        <modelElement href="Hobby-Project.uml#_WLYDgNJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_davNStJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_davNS9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_davNTNJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WLYqkNJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_davNTdJnEeuQPePjrCY5Vw" name="HeroDTO">
+          <modelElement href="Hobby-Project.uml#_WLWOUNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_davNTtJnEeuQPePjrCY5Vw" name="hashCode">
+      <modelElement href="Hobby-Project.uml#_WLZ4sNJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_davNT9JnEeuQPePjrCY5Vw" name="LegacyStyledElement">
+        <modelElement href="Hobby-Project.uml#_WLbG0NJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_davNUNJnEeuQPePjrCY5Vw" name="Annotations">
+        <modelElement href="Hobby-Project.uml#_WLbG0dJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_davNUdJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_davNUtJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_davNU9JnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WLafwNJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_davNVNJnEeuQPePjrCY5Vw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_davNVdJnEeuQPePjrCY5Vw" name="HeroDTO">
+      <modelElement href="Hobby-Project.uml#_WVDj8NJnEeuQPePjrCY5Vw"/>
+      <keywords xmi:id="_davNVtJnEeuQPePjrCY5Vw" keyword="create"/>
+      <visibility xmi:id="_davNV9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_davNWNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_davNWdJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVELA9JnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_davNWtJnEeuQPePjrCY5Vw" name="HeroDTO">
+          <modelElement href="Hobby-Project.uml#_WLWOUNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_davNW9JnEeuQPePjrCY5Vw" name="id">
+        <modelElement href="Hobby-Project.uml#_WVDj8dJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_davNXNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_davNXdJnEeuQPePjrCY5Vw" name="Long">
+          <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_davNXtJnEeuQPePjrCY5Vw" name="name">
+        <modelElement href="Hobby-Project.uml#_WVDj8tJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_davNX9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_davNYNJnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_davNYdJnEeuQPePjrCY5Vw" name="weapon">
+        <modelElement href="Hobby-Project.uml#_WVDj89JnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_davNYtJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_davNY9JnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_davNZNJnEeuQPePjrCY5Vw" name="element">
+        <modelElement href="Hobby-Project.uml#_WVDj9NJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_davNZdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_davNZtJnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_davNZ9JnEeuQPePjrCY5Vw" name="level">
+        <modelElement href="Hobby-Project.uml#_WVELANJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_davNaNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_davNadJnEeuQPePjrCY5Vw" name="Long">
+          <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_davNatJnEeuQPePjrCY5Vw" name="HeroDTO">
+      <modelElement href="Hobby-Project.uml#_WVELBNJnEeuQPePjrCY5Vw"/>
+      <keywords xmi:id="_davNa9JnEeuQPePjrCY5Vw" keyword="create"/>
+      <visibility xmi:id="_davNbNJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_davNbdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_davNbtJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVELC9JnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_davNb9JnEeuQPePjrCY5Vw" name="HeroDTO">
+          <modelElement href="Hobby-Project.uml#_WLWOUNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_davNcNJnEeuQPePjrCY5Vw" name="name">
+        <modelElement href="Hobby-Project.uml#_WVELBdJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_davNcdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_davNctJnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_davNc9JnEeuQPePjrCY5Vw" name="weapon">
+        <modelElement href="Hobby-Project.uml#_WVELBtJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_davNdNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_davNddJnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_davNdtJnEeuQPePjrCY5Vw" name="element">
+        <modelElement href="Hobby-Project.uml#_WVELB9JnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_davNd9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_davNeNJnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_davNedJnEeuQPePjrCY5Vw" name="level">
+        <modelElement href="Hobby-Project.uml#_WVELCNJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_davNetJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_davNe9JnEeuQPePjrCY5Vw" name="Long">
+          <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_davNfNJnEeuQPePjrCY5Vw" name="equals">
+      <modelElement href="Hobby-Project.uml#_WVIccdJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_davNfdJnEeuQPePjrCY5Vw" name="LegacyStyledElement">
+        <modelElement href="Hobby-Project.uml#_WVJDgNJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_davNftJnEeuQPePjrCY5Vw" name="Annotations">
+        <modelElement href="Hobby-Project.uml#_WVJDgdJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_davNf9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_davNgNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_davNgdJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVIcc9JnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_davNgtJnEeuQPePjrCY5Vw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_davNg9JnEeuQPePjrCY5Vw" name="obj">
+        <modelElement href="Hobby-Project.uml#_WVIcctJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_davNhNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_davNhdJnEeuQPePjrCY5Vw" name="Object">
+          <modelElement href="Hobby-Project.uml#_WVEyENJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_dZpBCNJnEeuQPePjrCY5Vw" name="Hero" associationsIn="_dZlWoNJnEeuQPePjrCY5Vw _dZpBANJnEeuQPePjrCY5Vw">
+    <modelElement href="Hobby-Project.uml#_WMNxANJnEeuQPePjrCY5Vw"/>
+    <visualProperties xmi:id="_dZpBCdJnEeuQPePjrCY5Vw" position="85.0,177.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_dZpBCtJnEeuQPePjrCY5Vw" name="JPA1StyledElement">
+      <modelElement href="Hobby-Project.uml#_WMOYENJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <visibility xmi:id="_dZpBC9JnEeuQPePjrCY5Vw" label="+"/>
+    <attributes xmi:id="_dZpBDNJnEeuQPePjrCY5Vw" name="id">
+      <modelElement href="Hobby-Project.uml#_WWFesNJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_dZpBDdJnEeuQPePjrCY5Vw" name="PrimaryKey">
+        <modelElement href="Hobby-Project.uml#_WWFesdJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_dZpBDtJnEeuQPePjrCY5Vw" name="GeneratedValueMapping">
+        <modelElement href="Hobby-Project.uml#_WWFestJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dZpBD9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dZpBENJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <type xmi:id="_dZpBEdJnEeuQPePjrCY5Vw" name="Long">
+        <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_dZpBEtJnEeuQPePjrCY5Vw" name="name">
+      <modelElement href="Hobby-Project.uml#_WWFes9JnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_dZpBE9JnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WWFetNJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dZpBFNJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dZpBFdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <type xmi:id="_dZpBFtJnEeuQPePjrCY5Vw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_dZpBF9JnEeuQPePjrCY5Vw" name="weapon">
+      <modelElement href="Hobby-Project.uml#_WWGFwNJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_dZpBGNJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WWGFwdJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dZpBGdJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dZpBGtJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <type xmi:id="_dZpBG9JnEeuQPePjrCY5Vw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_dZpBHNJnEeuQPePjrCY5Vw" name="element">
+      <modelElement href="Hobby-Project.uml#_WWGFwtJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_dZpBHdJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WWGFw9JnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dZpBHtJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dZpBH9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <type xmi:id="_dZpBINJnEeuQPePjrCY5Vw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_dZpBIdJnEeuQPePjrCY5Vw" name="level">
+      <modelElement href="Hobby-Project.uml#_WWGFxNJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_dZpBItJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WWGFxdJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dZpBI9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dZpBJNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <type xmi:id="_dZpBJdJnEeuQPePjrCY5Vw" name="Long">
+        <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_dZpBJtJnEeuQPePjrCY5Vw" name="team">
+      <modelElement href="Hobby-Project.uml#_WWGFxtJnEeuQPePjrCY5Vw"/>
+      <visibility xmi:id="_dZpBJ9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dZpBKNJnEeuQPePjrCY5Vw" label="0..1" max="1"/>
+      <type xmi:id="_dZpBKdJnEeuQPePjrCY5Vw" name="Team">
+        <modelElement href="Hobby-Project.uml#_WMHDUNJnEeuQPePjrCY5Vw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_dZpBKtJnEeuQPePjrCY5Vw" name="Hero">
+      <modelElement href="Hobby-Project.uml#_WMO_INJnEeuQPePjrCY5Vw"/>
+      <keywords xmi:id="_dZpBK9JnEeuQPePjrCY5Vw" keyword="create"/>
+      <stereotypes xmi:id="_dZpBLNJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WMPmM9JnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dZpBLdJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dZpBLtJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_dZpBL9JnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WMPmMtJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dZpBMNJnEeuQPePjrCY5Vw" name="Hero">
+          <modelElement href="Hobby-Project.uml#_WMNxANJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_dZpBMdJnEeuQPePjrCY5Vw" name="toString">
+      <modelElement href="Hobby-Project.uml#_WMQNQNJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_dZpBMtJnEeuQPePjrCY5Vw" name="LegacyStyledElement">
+        <modelElement href="Hobby-Project.uml#_WMQ0UdJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_dZpBM9JnEeuQPePjrCY5Vw" name="Annotations">
+        <modelElement href="Hobby-Project.uml#_WMRbYNJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dZpBNNJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dZpBNdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_dZpBNtJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WMQ0UNJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dZpBN9JnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_dZpBONJnEeuQPePjrCY5Vw" name="hashCode">
+      <modelElement href="Hobby-Project.uml#_WMRbYtJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_dZpBOdJnEeuQPePjrCY5Vw" name="LegacyStyledElement">
+        <modelElement href="Hobby-Project.uml#_WMSCcNJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_dZpBOtJnEeuQPePjrCY5Vw" name="Annotations">
+        <modelElement href="Hobby-Project.uml#_WMSCcdJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dZpBO9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dZpBPNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_dZpBPdJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WMRbY9JnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dZpBPtJnEeuQPePjrCY5Vw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_dZpBP9JnEeuQPePjrCY5Vw" name="Hero">
+      <modelElement href="Hobby-Project.uml#_WVoywNJnEeuQPePjrCY5Vw"/>
+      <keywords xmi:id="_dZpBQNJnEeuQPePjrCY5Vw" keyword="create"/>
+      <stereotypes xmi:id="_dZpBQdJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WVpZ19JnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dZpBQtJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dZpBQ9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_dZpBRNJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVpZ1tJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dZpBRdJnEeuQPePjrCY5Vw" name="Hero">
+          <modelElement href="Hobby-Project.uml#_WMNxANJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_dZpBRtJnEeuQPePjrCY5Vw" name="name">
+        <modelElement href="Hobby-Project.uml#_WVpZ0NJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dZpBR9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dZpBSNJnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_dZpBSdJnEeuQPePjrCY5Vw" name="weapon">
+        <modelElement href="Hobby-Project.uml#_WVpZ0dJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dZpBStJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dZpBS9JnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_dZpBTNJnEeuQPePjrCY5Vw" name="element">
+        <modelElement href="Hobby-Project.uml#_WVpZ0tJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dZpBTdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dZpBTtJnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_dZpBT9JnEeuQPePjrCY5Vw" name="level">
+        <modelElement href="Hobby-Project.uml#_WVpZ09JnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dZpBUNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dZpBUdJnEeuQPePjrCY5Vw" name="Long">
+          <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_dZpBUtJnEeuQPePjrCY5Vw" name="Hero">
+      <modelElement href="Hobby-Project.uml#_WVqA4NJnEeuQPePjrCY5Vw"/>
+      <keywords xmi:id="_dZpBU9JnEeuQPePjrCY5Vw" keyword="create"/>
+      <stereotypes xmi:id="_dZpBVNJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WVqn8NJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dZpBVdJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dZpBVtJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_dZpBV9JnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVqA6NJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dZpBWNJnEeuQPePjrCY5Vw" name="Hero">
+          <modelElement href="Hobby-Project.uml#_WMNxANJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_dZpBWdJnEeuQPePjrCY5Vw" name="id">
+        <modelElement href="Hobby-Project.uml#_WVqA4dJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dZpBWtJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dZpBW9JnEeuQPePjrCY5Vw" name="Long">
+          <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_dZpBXNJnEeuQPePjrCY5Vw" name="name">
+        <modelElement href="Hobby-Project.uml#_WVqA4tJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dZpBXdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dZpBXtJnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_dZpBX9JnEeuQPePjrCY5Vw" name="weapon">
+        <modelElement href="Hobby-Project.uml#_WVqA49JnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dZpBYNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dZpBYdJnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_dZpBYtJnEeuQPePjrCY5Vw" name="element">
+        <modelElement href="Hobby-Project.uml#_WVqA5NJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dZpBY9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dZpBZNJnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_dZpBZdJnEeuQPePjrCY5Vw" name="level">
+        <modelElement href="Hobby-Project.uml#_WVqA5dJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dZpBZtJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dZpBZ9JnEeuQPePjrCY5Vw" name="Long">
+          <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_dZpBaNJnEeuQPePjrCY5Vw" name="Hero">
+      <modelElement href="Hobby-Project.uml#_WVqn8dJnEeuQPePjrCY5Vw"/>
+      <keywords xmi:id="_dZpBadJnEeuQPePjrCY5Vw" keyword="create"/>
+      <stereotypes xmi:id="_dZpBatJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WVrPAdJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dZpBa9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dZpBbNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_dZpBbdJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVrPANJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dZpBbtJnEeuQPePjrCY5Vw" name="Hero">
+          <modelElement href="Hobby-Project.uml#_WMNxANJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_dZpBb9JnEeuQPePjrCY5Vw" name="id">
+        <modelElement href="Hobby-Project.uml#_WVqn8tJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dZpBcNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dZpBcdJnEeuQPePjrCY5Vw" name="Long">
+          <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_dZpBctJnEeuQPePjrCY5Vw" name="name">
+        <modelElement href="Hobby-Project.uml#_WVqn89JnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dZpBc9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dZpBdNJnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_dZpBddJnEeuQPePjrCY5Vw" name="weapon">
+        <modelElement href="Hobby-Project.uml#_WVqn9NJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dZpBdtJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dZpBd9JnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_dZpBeNJnEeuQPePjrCY5Vw" name="element">
+        <modelElement href="Hobby-Project.uml#_WVqn9dJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dZpBedJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dZpBetJnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_dZpBe9JnEeuQPePjrCY5Vw" name="level">
+        <modelElement href="Hobby-Project.uml#_WVqn9tJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dZpBfNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dZpBfdJnEeuQPePjrCY5Vw" name="Long">
+          <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_dZpBftJnEeuQPePjrCY5Vw" name="team">
+        <modelElement href="Hobby-Project.uml#_WVqn99JnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dZpBf9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dZpBgNJnEeuQPePjrCY5Vw" name="Team">
+          <modelElement href="Hobby-Project.uml#_WMHDUNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_dZpoENJnEeuQPePjrCY5Vw" name="equals">
+      <modelElement href="Hobby-Project.uml#_WVrPAtJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_dZpoEdJnEeuQPePjrCY5Vw" name="LegacyStyledElement">
+        <modelElement href="Hobby-Project.uml#_WVr2EdJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_dZpoEtJnEeuQPePjrCY5Vw" name="Annotations">
+        <modelElement href="Hobby-Project.uml#_WVr2EtJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dZpoE9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dZpoFNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_dZpoFdJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVr2ENJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dZpoFtJnEeuQPePjrCY5Vw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_dZpoF9JnEeuQPePjrCY5Vw" name="obj">
+        <modelElement href="Hobby-Project.uml#_WVrPA9JnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dZpoGNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dZpoGdJnEeuQPePjrCY5Vw" name="Object">
+          <modelElement href="Hobby-Project.uml#_WVEyENJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_dlE09NJnEeuQPePjrCY5Vw" name="TeamService" associationsIn="_dffKUNJnEeuQPePjrCY5Vw" associationsOut="_djKJYNJnEeuQPePjrCY5Vw _dkb7wNJnEeuQPePjrCY5Vw">
+    <modelElement href="Hobby-Project.uml#_WLxFENJnEeuQPePjrCY5Vw"/>
+    <visualProperties xmi:id="_dlE09dJnEeuQPePjrCY5Vw" position="775.0,211.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_dlE09tJnEeuQPePjrCY5Vw" name="LegacyStyledElement">
+      <modelElement href="Hobby-Project.uml#_WLxsINJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <stereotypes xmi:id="_dlE099JnEeuQPePjrCY5Vw" name="Annotations">
+      <modelElement href="Hobby-Project.uml#_WLzhUNJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <visibility xmi:id="_dlE0-NJnEeuQPePjrCY5Vw" label="+"/>
+    <attributes xmi:id="_dlE0-dJnEeuQPePjrCY5Vw" name="repo">
+      <modelElement href="Hobby-Project.uml#_WV7GoNJnEeuQPePjrCY5Vw"/>
+      <visibility xmi:id="_dlE0-tJnEeuQPePjrCY5Vw" label="-"/>
+      <cardinality xmi:id="_dlE0-9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <type xmi:id="_dlE0_NJnEeuQPePjrCY5Vw" name="TeamRepo">
+        <modelElement href="Hobby-Project.uml#_WLqXYNJnEeuQPePjrCY5Vw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_dlE0_dJnEeuQPePjrCY5Vw" name="mapper">
+      <modelElement href="Hobby-Project.uml#_WV7GodJnEeuQPePjrCY5Vw"/>
+      <visibility xmi:id="_dlE0_tJnEeuQPePjrCY5Vw" label="-"/>
+      <cardinality xmi:id="_dlE0_9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <type xmi:id="_dlE1ANJnEeuQPePjrCY5Vw" name="ModelMapper">
+        <modelElement href="Hobby-Project.uml#_WRPa8NJnEeuQPePjrCY5Vw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_dlE1AdJnEeuQPePjrCY5Vw" name="getTeams">
+      <modelElement href="Hobby-Project.uml#_WLyTMNJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_dlE1AtJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WLy6QdJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dlE1A9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dlE1BNJnEeuQPePjrCY5Vw" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_dlE1BdJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WLyTMdJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dlE1BtJnEeuQPePjrCY5Vw" name="TeamDTO">
+          <modelElement href="Hobby-Project.uml#_WL8EMNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_dlE1B9JnEeuQPePjrCY5Vw" name="createTeam">
+      <modelElement href="Hobby-Project.uml#_WTmycNJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_dlE1CNJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WTnZgNJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dlE1CdJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dlE1CtJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_dlE1C9JnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WTmyctJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dlE1DNJnEeuQPePjrCY5Vw" name="TeamDTO">
+          <modelElement href="Hobby-Project.uml#_WL8EMNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_dlE1DdJnEeuQPePjrCY5Vw" name="teamDTO">
+        <modelElement href="Hobby-Project.uml#_WTmycdJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dlE1DtJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dlE1D9JnEeuQPePjrCY5Vw" name="TeamDTO">
+          <modelElement href="Hobby-Project.uml#_WL8EMNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_dlE1ENJnEeuQPePjrCY5Vw" name="TeamService">
+      <modelElement href="Hobby-Project.uml#_WVYUENJnEeuQPePjrCY5Vw"/>
+      <keywords xmi:id="_dlE1EdJnEeuQPePjrCY5Vw" keyword="create"/>
+      <stereotypes xmi:id="_dlE1EtJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WVY7INJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dlE1E9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dlE1FNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_dlE1FdJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVYUFdJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dlE1FtJnEeuQPePjrCY5Vw" name="TeamService">
+          <modelElement href="Hobby-Project.uml#_WLxFENJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_dlE1F9JnEeuQPePjrCY5Vw" name="repo">
+        <modelElement href="Hobby-Project.uml#_WVYUEdJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dlE1GNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dlE1GdJnEeuQPePjrCY5Vw" name="TeamRepo">
+          <modelElement href="Hobby-Project.uml#_WLqXYNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_dlE1GtJnEeuQPePjrCY5Vw" name="mapper">
+        <modelElement href="Hobby-Project.uml#_WVYUEtJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dlE1G9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dlE1HNJnEeuQPePjrCY5Vw" name="ModelMapper">
+          <modelElement href="Hobby-Project.uml#_WRPa8NJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_dlE1HdJnEeuQPePjrCY5Vw" name="updateTeam">
+      <modelElement href="Hobby-Project.uml#_WVY7IdJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_dlE1HtJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WVY7JdJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dlE1H9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dlE1INJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_dlE1IdJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVY7JNJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dlE1ItJnEeuQPePjrCY5Vw" name="TeamDTO">
+          <modelElement href="Hobby-Project.uml#_WL8EMNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_dlE1I9JnEeuQPePjrCY5Vw" name="id">
+        <modelElement href="Hobby-Project.uml#_WVY7ItJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dlE1JNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dlE1JdJnEeuQPePjrCY5Vw" name="Long">
+          <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_dlE1JtJnEeuQPePjrCY5Vw" name="newData">
+        <modelElement href="Hobby-Project.uml#_WVY7I9JnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dlE1J9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dlE1KNJnEeuQPePjrCY5Vw" name="TeamDTO">
+          <modelElement href="Hobby-Project.uml#_WL8EMNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_dlE1KdJnEeuQPePjrCY5Vw" name="deleteTeam">
+      <modelElement href="Hobby-Project.uml#_WVY7JtJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_dlE1KtJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WVZiMNJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dlE1K9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dlE1LNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_dlE1LdJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVY7KNJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dlE1LtJnEeuQPePjrCY5Vw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_dlE1L9JnEeuQPePjrCY5Vw" name="id">
+        <modelElement href="Hobby-Project.uml#_WVY7J9JnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dlE1MNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dlE1MdJnEeuQPePjrCY5Vw" name="Long">
+          <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_dgQmYNJnEeuQPePjrCY5Vw" name="TeamController" associationsOut="_dffKUNJnEeuQPePjrCY5Vw">
+    <modelElement href="Hobby-Project.uml#_WM2qMNJnEeuQPePjrCY5Vw"/>
+    <visualProperties xmi:id="_dgQmYdJnEeuQPePjrCY5Vw" position="1460.0,236.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_dgQmYtJnEeuQPePjrCY5Vw" name="LegacyStyledElement">
+      <modelElement href="Hobby-Project.uml#_WM3RQNJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <stereotypes xmi:id="_dgQmY9JnEeuQPePjrCY5Vw" name="Annotations">
+      <modelElement href="Hobby-Project.uml#_WM5tgNJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <visibility xmi:id="_dgQmZNJnEeuQPePjrCY5Vw" label="+"/>
+    <attributes xmi:id="_dgQmZdJnEeuQPePjrCY5Vw" name="service">
+      <modelElement href="Hobby-Project.uml#_WWMMY9JnEeuQPePjrCY5Vw"/>
+      <visibility xmi:id="_dgQmZtJnEeuQPePjrCY5Vw" label="-"/>
+      <cardinality xmi:id="_dgQmZ9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <type xmi:id="_dgQmaNJnEeuQPePjrCY5Vw" name="TeamService">
+        <modelElement href="Hobby-Project.uml#_WLxFENJnEeuQPePjrCY5Vw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_dgQmadJnEeuQPePjrCY5Vw" name="getTeams">
+      <modelElement href="Hobby-Project.uml#_WM34UNJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_dgQmatJnEeuQPePjrCY5Vw" name="Annotations">
+        <modelElement href="Hobby-Project.uml#_WM4fYdJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dgQma9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dgQmbNJnEeuQPePjrCY5Vw" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_dgQmbdJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WM34UdJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dgQmbtJnEeuQPePjrCY5Vw" name="TeamDTO">
+          <modelElement href="Hobby-Project.uml#_WL8EMNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_dgQmb9JnEeuQPePjrCY5Vw" name="TeamController">
+      <modelElement href="Hobby-Project.uml#_WUzsUNJnEeuQPePjrCY5Vw"/>
+      <keywords xmi:id="_dgQmcNJnEeuQPePjrCY5Vw" keyword="create"/>
+      <stereotypes xmi:id="_dgQmcdJnEeuQPePjrCY5Vw" name="Annotations">
+        <modelElement href="Hobby-Project.uml#_WU06cNJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dgQmctJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dgQmc9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_dgQmdNJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WU0TY9JnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dgQmddJnEeuQPePjrCY5Vw" name="TeamController">
+          <modelElement href="Hobby-Project.uml#_WM2qMNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_dgQmdtJnEeuQPePjrCY5Vw" name="service">
+        <modelElement href="Hobby-Project.uml#_WU0TYNJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dgQmd9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dgQmeNJnEeuQPePjrCY5Vw" name="TeamService">
+          <modelElement href="Hobby-Project.uml#_WLxFENJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_dgQmedJnEeuQPePjrCY5Vw" name="createTeam">
+      <modelElement href="Hobby-Project.uml#_WU06ctJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_dgQmetJnEeuQPePjrCY5Vw" name="Annotations">
+        <modelElement href="Hobby-Project.uml#_WU1hgtJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dgQme9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dgQmfNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_dgQmfdJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WU06dNJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dgQmftJnEeuQPePjrCY5Vw" name="TeamDTO">
+          <modelElement href="Hobby-Project.uml#_WL8EMNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_dgQmf9JnEeuQPePjrCY5Vw" name="teamDTO">
+        <modelElement href="Hobby-Project.uml#_WU06c9JnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dgQmgNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dgQmgdJnEeuQPePjrCY5Vw" name="TeamDTO">
+          <modelElement href="Hobby-Project.uml#_WL8EMNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_dgQmgtJnEeuQPePjrCY5Vw" name="updateTeam">
+      <modelElement href="Hobby-Project.uml#_WVwukNJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_dgQmg9JnEeuQPePjrCY5Vw" name="Annotations">
+        <modelElement href="Hobby-Project.uml#_WVxVpNJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dgQmhNJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dgQmhdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_dgQmhtJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVwuk9JnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dgQmh9JnEeuQPePjrCY5Vw" name="TeamDTO">
+          <modelElement href="Hobby-Project.uml#_WL8EMNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_dgQmiNJnEeuQPePjrCY5Vw" name="teamDTO">
+        <modelElement href="Hobby-Project.uml#_WVwukdJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dgQmidJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dgQmitJnEeuQPePjrCY5Vw" name="TeamDTO">
+          <modelElement href="Hobby-Project.uml#_WL8EMNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_dgQmi9JnEeuQPePjrCY5Vw" name="id">
+        <modelElement href="Hobby-Project.uml#_WVwuktJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dgQmjNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dgQmjdJnEeuQPePjrCY5Vw" name="Long">
+          <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_dgQmjtJnEeuQPePjrCY5Vw" name="delete">
+      <modelElement href="Hobby-Project.uml#_WVx8sNJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_dgQmj9JnEeuQPePjrCY5Vw" name="Annotations">
+        <modelElement href="Hobby-Project.uml#_WVx8tdJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dgQmkNJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dgQmkdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_dgQmktJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVx8stJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dgQmk9JnEeuQPePjrCY5Vw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_dgQmlNJnEeuQPePjrCY5Vw" name="id">
+        <modelElement href="Hobby-Project.uml#_WVx8sdJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_dgQmldJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_dgQmltJnEeuQPePjrCY5Vw" name="Long">
+          <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_dkC6NtJnEeuQPePjrCY5Vw" name="TeamRepo" associationsIn="_djKJYNJnEeuQPePjrCY5Vw">
+    <modelElement href="Hobby-Project.uml#_WLqXYNJnEeuQPePjrCY5Vw"/>
+    <visualProperties xmi:id="_dkC6N9JnEeuQPePjrCY5Vw" position="1287.0,285.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_dkC6ONJnEeuQPePjrCY5Vw" name="LegacyStyledElement">
+      <modelElement href="Hobby-Project.uml#_WLq-cNJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <stereotypes xmi:id="_dkC6OdJnEeuQPePjrCY5Vw" name="Annotations">
+      <modelElement href="Hobby-Project.uml#_WLrlgNJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <visibility xmi:id="_dkC6OtJnEeuQPePjrCY5Vw" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_dYkC8NJnEeuQPePjrCY5Vw" name="AppConfig">
+    <modelElement href="Hobby-Project.uml#_WLBeMNJnEeuQPePjrCY5Vw"/>
+    <visualProperties xmi:id="_dYkC8dJnEeuQPePjrCY5Vw" position="1577.0,448.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_dYkC8tJnEeuQPePjrCY5Vw" name="LegacyStyledElement">
+      <modelElement href="Hobby-Project.uml#_WLCFQNJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <stereotypes xmi:id="_dYkC89JnEeuQPePjrCY5Vw" name="Annotations">
+      <modelElement href="Hobby-Project.uml#_WLD6cNJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <visibility xmi:id="_dYkC9NJnEeuQPePjrCY5Vw" label="+"/>
+    <operations xmi:id="_dYkC9dJnEeuQPePjrCY5Vw" name="mapper">
+      <modelElement href="Hobby-Project.uml#_WLCFQdJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_dYkC9tJnEeuQPePjrCY5Vw" name="Annotations">
+        <modelElement href="Hobby-Project.uml#_WLDTYNJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_dYkC99JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_dYkC-NJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_dYkC-dJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WU9dUNJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_dYkC-tJnEeuQPePjrCY5Vw" name="ModelMapper">
+          <modelElement href="Hobby-Project.uml#_WRPa8NJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ddipkNJnEeuQPePjrCY5Vw" name="HobbyProjectApplication">
+    <modelElement href="Hobby-Project.uml#_WK0C0NJnEeuQPePjrCY5Vw"/>
+    <visualProperties xmi:id="_ddipkdJnEeuQPePjrCY5Vw" position="1596.0,538.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_ddipktJnEeuQPePjrCY5Vw" name="LegacyStyledElement">
+      <modelElement href="Hobby-Project.uml#_WK4UQNJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <stereotypes xmi:id="_ddipk9JnEeuQPePjrCY5Vw" name="Annotations">
+      <modelElement href="Hobby-Project.uml#_WK_pANJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <visibility xmi:id="_ddiplNJnEeuQPePjrCY5Vw" label="+"/>
+    <operations xmi:id="_ddipldJnEeuQPePjrCY5Vw" name="main" staticOperation="true">
+      <modelElement href="Hobby-Project.uml#_WK8lsNJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_ddipltJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WK-a4NJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_ddipl9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_ddipmNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_ddipmdJnEeuQPePjrCY5Vw" name="args">
+        <modelElement href="Hobby-Project.uml#_WK8lsdJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_ddipmtJnEeuQPePjrCY5Vw" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_ddipm9JnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_dZJ40NJnEeuQPePjrCY5Vw" name="config">
+    <modelElement href="Hobby-Project.uml#_WL19kNJnEeuQPePjrCY5Vw"/>
+    <visualProperties xmi:id="_dZJ40dJnEeuQPePjrCY5Vw" position="1662.0,638.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_dZJ40tJnEeuQPePjrCY5Vw" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_diLR8NJnEeuQPePjrCY5Vw" name="TeamDTO" associationsOut="_dhTIMNJnEeuQPePjrCY5Vw">
+    <modelElement href="Hobby-Project.uml#_WL8EMNJnEeuQPePjrCY5Vw"/>
+    <visualProperties xmi:id="_diLR8dJnEeuQPePjrCY5Vw" position="520.0,500.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_diLR8tJnEeuQPePjrCY5Vw" label="+"/>
+    <attributes xmi:id="_diLR89JnEeuQPePjrCY5Vw" name="id">
+      <modelElement href="Hobby-Project.uml#_WV870NJnEeuQPePjrCY5Vw"/>
+      <visibility xmi:id="_diLR9NJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_diLR9dJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <type xmi:id="_diLR9tJnEeuQPePjrCY5Vw" name="Long">
+        <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_diLR99JnEeuQPePjrCY5Vw" name="name">
+      <modelElement href="Hobby-Project.uml#_WV870dJnEeuQPePjrCY5Vw"/>
+      <visibility xmi:id="_diLR-NJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_diLR-dJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <type xmi:id="_diLR-tJnEeuQPePjrCY5Vw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_diLR-9JnEeuQPePjrCY5Vw" name="heroes">
+      <modelElement href="Hobby-Project.uml#_WV870tJnEeuQPePjrCY5Vw"/>
+      <visibility xmi:id="_diLR_NJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_diLR_dJnEeuQPePjrCY5Vw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_diLR_tJnEeuQPePjrCY5Vw" name="HeroDTO">
+        <modelElement href="Hobby-Project.uml#_WLWOUNJnEeuQPePjrCY5Vw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_diLR_9JnEeuQPePjrCY5Vw" name="TeamDTO">
+      <modelElement href="Hobby-Project.uml#_WL95YNJnEeuQPePjrCY5Vw"/>
+      <keywords xmi:id="_diLSANJnEeuQPePjrCY5Vw" keyword="create"/>
+      <stereotypes xmi:id="_diLSAdJnEeuQPePjrCY5Vw" name="LegacyStyledElement">
+        <modelElement href="Hobby-Project.uml#_WL-gcNJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_diLSAtJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_diLSA9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_diLSBNJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WL-gcdJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_diLSBdJnEeuQPePjrCY5Vw" name="TeamDTO">
+          <modelElement href="Hobby-Project.uml#_WL8EMNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_diLSBtJnEeuQPePjrCY5Vw" name="TeamDTO">
+      <modelElement href="Hobby-Project.uml#_WL-gctJnEeuQPePjrCY5Vw"/>
+      <keywords xmi:id="_diLSB9JnEeuQPePjrCY5Vw" keyword="create"/>
+      <visibility xmi:id="_diLSCNJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_diLSCdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_diLSCtJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WL_HgtJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_diLSC9JnEeuQPePjrCY5Vw" name="TeamDTO">
+          <modelElement href="Hobby-Project.uml#_WL8EMNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_diLSDNJnEeuQPePjrCY5Vw" name="name">
+        <modelElement href="Hobby-Project.uml#_WL-gc9JnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_diLSDdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_diLSDtJnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_diLSD9JnEeuQPePjrCY5Vw" name="hashCode">
+      <modelElement href="Hobby-Project.uml#_WL_ukNJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_diLSENJnEeuQPePjrCY5Vw" name="LegacyStyledElement">
+        <modelElement href="Hobby-Project.uml#_WL_uktJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_diLSEdJnEeuQPePjrCY5Vw" name="Annotations">
+        <modelElement href="Hobby-Project.uml#_WMAVoNJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_diLSEtJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_diLSE9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_diLSFNJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WL_ukdJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_diLSFdJnEeuQPePjrCY5Vw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_diLSFtJnEeuQPePjrCY5Vw" name="TeamDTO">
+      <modelElement href="Hobby-Project.uml#_WVawUNJnEeuQPePjrCY5Vw"/>
+      <keywords xmi:id="_diLSF9JnEeuQPePjrCY5Vw" keyword="create"/>
+      <visibility xmi:id="_diLSGNJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_diLSGdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_diLSGtJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVawVtJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_diLSG9JnEeuQPePjrCY5Vw" name="TeamDTO">
+          <modelElement href="Hobby-Project.uml#_WL8EMNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_diLSHNJnEeuQPePjrCY5Vw" name="id">
+        <modelElement href="Hobby-Project.uml#_WVawUdJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_diLSHdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_diLSHtJnEeuQPePjrCY5Vw" name="Long">
+          <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_diLSH9JnEeuQPePjrCY5Vw" name="name">
+        <modelElement href="Hobby-Project.uml#_WVawUtJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_diLSINJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_diLSIdJnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_diLSItJnEeuQPePjrCY5Vw" name="heroes">
+        <modelElement href="Hobby-Project.uml#_WVawU9JnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_diLSI9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_diLSJNJnEeuQPePjrCY5Vw" name="List">
+          <modelElement href="Hobby-Project.uml#_WRddYNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_diLSJdJnEeuQPePjrCY5Vw" name="TeamDTO">
+      <modelElement href="Hobby-Project.uml#_WVeasNJnEeuQPePjrCY5Vw"/>
+      <keywords xmi:id="_diLSJtJnEeuQPePjrCY5Vw" keyword="create"/>
+      <visibility xmi:id="_diLSJ9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_diLSKNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_diLSKdJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVeatdJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_diLSKtJnEeuQPePjrCY5Vw" name="TeamDTO">
+          <modelElement href="Hobby-Project.uml#_WL8EMNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_diLSK9JnEeuQPePjrCY5Vw" name="id">
+        <modelElement href="Hobby-Project.uml#_WVeasdJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_diLSLNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_diLSLdJnEeuQPePjrCY5Vw" name="Long">
+          <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_diLSLtJnEeuQPePjrCY5Vw" name="name">
+        <modelElement href="Hobby-Project.uml#_WVeastJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_diLSL9JnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_diLSMNJnEeuQPePjrCY5Vw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_diLSMdJnEeuQPePjrCY5Vw" name="equals">
+      <modelElement href="Hobby-Project.uml#_WVfBwNJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_diLSMtJnEeuQPePjrCY5Vw" name="LegacyStyledElement">
+        <modelElement href="Hobby-Project.uml#_WVfBw9JnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_diLSM9JnEeuQPePjrCY5Vw" name="Annotations">
+        <modelElement href="Hobby-Project.uml#_WVfo0NJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_diLSNNJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_diLSNdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_diLSNtJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVfBwtJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_diLSN9JnEeuQPePjrCY5Vw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_diLSONJnEeuQPePjrCY5Vw" name="obj">
+        <modelElement href="Hobby-Project.uml#_WVfBwdJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_diLSOdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_diLSOtJnEeuQPePjrCY5Vw" name="Object">
+          <modelElement href="Hobby-Project.uml#_WVEyENJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_daZO8NJnEeuQPePjrCY5Vw" name="HeroController" associationsOut="_daIwQNJnEeuQPePjrCY5Vw">
+    <modelElement href="Hobby-Project.uml#_WLEhgNJnEeuQPePjrCY5Vw"/>
+    <visualProperties xmi:id="_daZO8dJnEeuQPePjrCY5Vw" position="965.0,783.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_daZO8tJnEeuQPePjrCY5Vw" name="LegacyStyledElement">
+      <modelElement href="Hobby-Project.uml#_WLFvoNJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <stereotypes xmi:id="_daZO89JnEeuQPePjrCY5Vw" name="Annotations">
+      <modelElement href="Hobby-Project.uml#_WLIL4NJnEeuQPePjrCY5Vw"/>
+    </stereotypes>
+    <visibility xmi:id="_daZO9NJnEeuQPePjrCY5Vw" label="+"/>
+    <attributes xmi:id="_daZO9dJnEeuQPePjrCY5Vw" name="service">
+      <modelElement href="Hobby-Project.uml#_WV21MNJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_daZO9tJnEeuQPePjrCY5Vw" name="Annotations">
+        <modelElement href="Hobby-Project.uml#_WV3cQNJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_daZO99JnEeuQPePjrCY5Vw" label="-"/>
+      <cardinality xmi:id="_daZO-NJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <type xmi:id="_daZO-dJnEeuQPePjrCY5Vw" name="HeroService">
+        <modelElement href="Hobby-Project.uml#_WLsMkNJnEeuQPePjrCY5Vw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_daZO-tJnEeuQPePjrCY5Vw" name="getHeroes">
+      <modelElement href="Hobby-Project.uml#_WLGWsNJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_daZO-9JnEeuQPePjrCY5Vw" name="Annotations">
+        <modelElement href="Hobby-Project.uml#_WLG9wtJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_daZO_NJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_daZO_dJnEeuQPePjrCY5Vw" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_daZO_tJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WLG9wNJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_daZO_9JnEeuQPePjrCY5Vw" name="HeroDTO">
+          <modelElement href="Hobby-Project.uml#_WLWOUNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_daZPANJnEeuQPePjrCY5Vw" name="HeroController">
+      <modelElement href="Hobby-Project.uml#_WR_o4dJnEeuQPePjrCY5Vw"/>
+      <keywords xmi:id="_daZPAdJnEeuQPePjrCY5Vw" keyword="create"/>
+      <stereotypes xmi:id="_daZPAtJnEeuQPePjrCY5Vw" name="StyledElement">
+        <modelElement href="Hobby-Project.uml#_WSAP9NJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_daZPA9JnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_daZPBNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_daZPBdJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WSAP89JnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_daZPBtJnEeuQPePjrCY5Vw" name="HeroController">
+          <modelElement href="Hobby-Project.uml#_WLEhgNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_daZPB9JnEeuQPePjrCY5Vw" name="service">
+        <modelElement href="Hobby-Project.uml#_WSAP8NJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_daZPCNJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_daZPCdJnEeuQPePjrCY5Vw" name="HeroService">
+          <modelElement href="Hobby-Project.uml#_WLsMkNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_daZPCtJnEeuQPePjrCY5Vw" name="createHero">
+      <modelElement href="Hobby-Project.uml#_WSAP9dJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_daZPC9JnEeuQPePjrCY5Vw" name="Annotations">
+        <modelElement href="Hobby-Project.uml#_WSA3BNJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_daZPDNJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_daZPDdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_daZPDtJnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WSA3AdJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_daZPD9JnEeuQPePjrCY5Vw" name="HeroDTO">
+          <modelElement href="Hobby-Project.uml#_WLWOUNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_daZPENJnEeuQPePjrCY5Vw" name="heroDTO">
+        <modelElement href="Hobby-Project.uml#_WSA3ANJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_daZPEdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_daZPEtJnEeuQPePjrCY5Vw" name="HeroDTO">
+          <modelElement href="Hobby-Project.uml#_WLWOUNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_daZPE9JnEeuQPePjrCY5Vw" name="updateHeroes">
+      <modelElement href="Hobby-Project.uml#_WVBHsdJnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_daZPFNJnEeuQPePjrCY5Vw" name="Annotations">
+        <modelElement href="Hobby-Project.uml#_WVCV0NJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_daZPFdJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_daZPFtJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_daZPF9JnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVBuwtJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_daZPGNJnEeuQPePjrCY5Vw" name="HeroDTO">
+          <modelElement href="Hobby-Project.uml#_WLWOUNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_daZPGdJnEeuQPePjrCY5Vw" name="heroDTO">
+        <modelElement href="Hobby-Project.uml#_WVBuwNJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_daZPGtJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_daZPG9JnEeuQPePjrCY5Vw" name="HeroDTO">
+          <modelElement href="Hobby-Project.uml#_WLWOUNJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_daZPHNJnEeuQPePjrCY5Vw" name="id">
+        <modelElement href="Hobby-Project.uml#_WVBuwdJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_daZPHdJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_daZPHtJnEeuQPePjrCY5Vw" name="Long">
+          <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_daZPH9JnEeuQPePjrCY5Vw" name="delete">
+      <modelElement href="Hobby-Project.uml#_WVCV09JnEeuQPePjrCY5Vw"/>
+      <stereotypes xmi:id="_daZPINJnEeuQPePjrCY5Vw" name="Annotations">
+        <modelElement href="Hobby-Project.uml#_WVC84NJnEeuQPePjrCY5Vw"/>
+      </stereotypes>
+      <visibility xmi:id="_daZPIdJnEeuQPePjrCY5Vw" label="+"/>
+      <cardinality xmi:id="_daZPItJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_daZPI9JnEeuQPePjrCY5Vw">
+        <modelElement href="Hobby-Project.uml#_WVCV1dJnEeuQPePjrCY5Vw"/>
+        <type xmi:id="_daZPJNJnEeuQPePjrCY5Vw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_daZPJdJnEeuQPePjrCY5Vw" name="id">
+        <modelElement href="Hobby-Project.uml#_WVCV1NJnEeuQPePjrCY5Vw"/>
+        <cardinality xmi:id="_daZPJtJnEeuQPePjrCY5Vw" label="1" max="1" min="1"/>
+        <type xmi:id="_daZPJ9JnEeuQPePjrCY5Vw" name="Long">
+          <modelElement href="Hobby-Project.uml#_WU9dUtJnEeuQPePjrCY5Vw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

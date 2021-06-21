@@ -1,10 +1,9 @@
-drop table if exists Heroes CASCADE;
+DROP TABLE IF EXISTS Heroes cascade;
 
-
-create table Heroes (
-heroId bigint not null auto_increment, 
-element varchar(255), level bigint, 
-heroName varchar(255), 
-weapon varchar(255),
-levels int, 
-team_id bigint, primary key (heroID));
+CREATE TABLE Heroes(
+heroID INT auto_increment,
+heroName VARCHAR(255) NOT NULL,
+Element VARCHAR(255)  NOT NULL,
+Weapon VARCHAR(255) NOT NULL,
+Levels int,
+PRIMARY KEY (heroID));
