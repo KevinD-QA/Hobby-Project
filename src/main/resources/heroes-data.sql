@@ -1,0 +1,1 @@
+INSERT INTO `Heroes` (`heroName`, `Element`, `Weapon`,`Levels`) VALUES ('Zhongli', 'Geo', 'Polearm', 90);
