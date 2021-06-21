@@ -90,7 +90,6 @@ class TeamServiceTest {
 	@Test
 	void testUpdate() {
 		//Given
-		Team testData = new Team("Zhongli Carry");
 		Team team = new Team(1L, "Hu tao carry");
 		Team updatedTeam = new Team(1l, "Zhongli Carry");
 		TeamDTO updatedDTO = new TeamDTO(1L, "Hu tao carry");
@@ -101,10 +100,10 @@ class TeamServiceTest {
 		Mockito.when(this.repo.save(updatedTeam)).thenReturn(updatedTeam);
 
 		//Then
-//		assertThat(this.service.updateTeam(testID, testData)).isEqualTo(updatedDTO);
-//
-//		Mockito.verify(this.repo, Mockito.times(1)).findById(testID);
-//		Mockito.verify(this.repo, Mockito.times(1)).save(updatedTeam);
+		assertThat(this.service.updateTeam(testID, updatedDTO)).isEqualTo(updatedDTO);
+
+		Mockito.verify(this.repo, Mockito.times(1)).findById(testID);
+		Mockito.verify(this.repo, Mockito.times(1)).save(updatedTeam);
 	}
 		
 		@Test

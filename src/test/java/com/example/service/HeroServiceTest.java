@@ -92,7 +92,6 @@ class HeroServiceTest {
 	@Test
 	void testUpdate() {
 		//Given
-		Hero testData = new Hero("Eula", "Cryo", "Claymore", 80l);
 		Hero hero = new Hero(1L, "Ningguang", "Geo", "Book", 85l);
 		Hero updatedHero = new Hero(1l, "Eula", "Cryo", "Claymore", 80l);
 		HeroDTO updatedDTO = new HeroDTO(1L, "Eula", "Cryo", "Claymore", 80l);
@@ -103,10 +102,10 @@ class HeroServiceTest {
 		Mockito.when(this.repo.save(updatedHero)).thenReturn(updatedHero);
 
 		//Then
-//		assertThat(this.service.updateHeroes(testID, testData)).isEqualTo(updatedDTO);
-//
-//		Mockito.verify(this.repo, Mockito.times(1)).findById(testID);
-//		Mockito.verify(this.repo, Mockito.times(1)).save(updatedHero);
+		assertThat(this.service.updateHeroes(testID, updatedDTO)).isEqualTo(updatedDTO);
+
+		Mockito.verify(this.repo, Mockito.times(1)).findById(testID);
+		Mockito.verify(this.repo, Mockito.times(1)).save(updatedHero);
 	}
 		
 		@Test

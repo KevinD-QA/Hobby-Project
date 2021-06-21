@@ -1,5 +1,6 @@
 package com.example.Integration;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -10,7 +11,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import java.util.ArrayList;
 import java.util.List;
 
-import org.hibernate.internal.build.AllowSysOut;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -26,8 +26,6 @@ import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.ResultMatcher;
 
 import com.example.domain.Hero;
-import com.example.domain.Team;
-import com.example.dto.HeroDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 
@@ -50,20 +48,17 @@ class HeroIntegrationTest {
 		String testHeroAsJson = this.mapper.writeValueAsString(testHero);
 		
 		Hero testSavedHero = new Hero("Kazuha", "Anemo", "Sword", 90l);
-		testSavedHero.setId(1l); //Change to 2 when ssql works
-		String testSavedHeroAsJson = this.mapper.writeValueAsString(testSavedHero);
-		
+		testSavedHero.setId(1l); 		
 		RequestBuilder mockRequest = post("/heroes/create").content(testHeroAsJson)
 				.contentType(MediaType.APPLICATION_JSON);
 		ResultMatcher checkStatus = status().isOk();
-		ResultMatcher checkBody = content().json(testSavedHeroAsJson); //Checks with ID
 		//this.mvc.perform(mockRequest).andExpect(checkStatus).andExpect(checkBody);
-//		MvcResult result = this.mvc.perform(mockRequest).andExpect(checkStatus).andReturn();
-//		String response = result.getResponse().getContentAsString();
-//		Hero responseData = this.mapper.readValue(response, Hero.class);
-//		
-//		System.out.println("Hero: " + responseData);
-		//assertThat(responseData).isEqualTo(testSavedHero); //Need to create and drop table but not working rn
+		MvcResult result = this.mvc.perform(mockRequest).andExpect(checkStatus).andReturn();
+		String response = result.getResponse().getContentAsString();
+		Hero responseData = this.mapper.readValue(response, Hero.class);
+		
+		System.out.println("Hero: " + responseData);
+		assertThat(responseData).isEqualTo(testSavedHero); //Need to create and drop table but not working rn
 	}
 	
 	@Test
@@ -72,28 +67,24 @@ class HeroIntegrationTest {
 		List<Hero> testHeroes = new ArrayList<>();
 		testHeroes.add(testHero);
 
-		String testHeroesAsJSONArray = this.mapper.writeValueAsString(testHeroes);
 		RequestBuilder mockRequest = get("/heroes/");
 		ResultMatcher checkStatus = status().isOk();
-		ResultMatcher checkBody = content().json(testHeroesAsJSONArray); //Checks with ID
-		//this.mvc.perform(mockRequest).andExpect(checkStatus).andExpect(checkBody); Still needs fixing
+		this.mvc.perform(mockRequest).andExpect(checkStatus).andReturn(); 
 		//Need to create and drop
 	}
 	
 	@Test
 	void testUpdate() throws Exception{
-		Team team = new Team(1L, null);
-		Hero testHero = new Hero(1l,"Ganyu", "Cryo", "Bow", 90l, team);
+		Hero testHero = new Hero(1l,"Ganyu", "Cryo", "Bow", 90l);
 		String testHeroAsJson = this.mapper.writeValueAsString(testHero);
 
-		HeroDTO testSavedHero = new HeroDTO(1l, "Ganyu", "Cryo", "Bow", 90l);
-		String testSavedHeroAsJson = this.mapper.writeValueAsString(testSavedHero);
+//		HeroDTO testSavedHero = new HeroDTO(1l, "Ganyu", "Cryo", "Bow", 90l);
+//		String testSavedHeroAsJson = this.mapper.writeValueAsString(testSavedHero);
 
 		RequestBuilder mockRequest = put("/heroes/update/1").content(testHeroAsJson)
 				.contentType(MediaType.APPLICATION_JSON);
 		ResultMatcher checkStatus = status().isOk();
-		ResultMatcher checkBody = content().json(testSavedHeroAsJson); //Checks with ID
-		//this.mvc.perform(mockRequest).andExpect(checkStatus).andExpect(checkBody); //Still needs fixing
+		this.mvc.perform(mockRequest).andExpect(checkStatus); //Still needs fixing
 	}
 	
 	@Test
@@ -103,6 +94,6 @@ class HeroIntegrationTest {
 			ResultMatcher checkStatus = status().isOk();
 			ResultMatcher checkBody = content().string("true");
 
-			//this.mvc.perform(mockRequest).andExpect(checkStatus).andExpect(checkBody);
+			this.mvc.perform(mockRequest).andExpect(checkStatus).andExpect(checkBody);
 	}
 }

@@ -1,6 +1,5 @@
 package com.example.Integration;
 
-import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -20,7 +19,6 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.jdbc.Sql.ExecutionPhase;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.ResultMatcher;
 
@@ -54,7 +52,7 @@ class TeamIntegrationTest {
 				.contentType(MediaType.APPLICATION_JSON);
 		ResultMatcher checkStatus = status().isOk();
 		ResultMatcher checkBody = content().json(testSavedTeamAsJson); // Checks with ID
-//		this.mvc.perform(mockRequest).andExpect(checkStatus).andExpect(checkBody);
+		this.mvc.perform(mockRequest).andExpect(checkStatus).andExpect(checkBody);
 //		MvcResult result = this.mvc.perform(mockRequest).andExpect(checkStatus).andReturn();
 //		String response = result.getResponse().getContentAsString();
 //		Team responseData = this.mapper.readValue(response, Team.class);
@@ -68,11 +66,7 @@ class TeamIntegrationTest {
 		Team testTeam = new Team("Beat them up");
 		List<Team> testTeams = List.of(testTeam);
 		String testTeamsAsJSONArray = this.mapper.writeValueAsString(testTeams);
-		RequestBuilder mockRequest = get("/team/");
-		ResultMatcher checkStatus = status().isOk();
-		ResultMatcher checkBody = content().json(testTeamsAsJSONArray); // Checks with ID
-		// this.mvc.perform(get("/team/")).andExpect(status().isOk()).andExpect(content().json(testTeamsAsJSONArray));
-		// Need to create and drop
+		 this.mvc.perform(get("/team/")).andExpect(status().isOk()).andExpect(content().json(testTeamsAsJSONArray));
 	}
 
 	@Test
@@ -82,6 +76,8 @@ class TeamIntegrationTest {
 
 		RequestBuilder mockRequest = put("/team/update/1").content(testTeamAsJson)
 				.contentType(MediaType.APPLICATION_JSON);
+		ResultMatcher checkStatus = status().isOk();
+		this.mvc.perform(mockRequest).andExpect(checkStatus); //Still needs fixing
 	}
 
 	@Test
@@ -91,8 +87,7 @@ class TeamIntegrationTest {
 		ResultMatcher checkStatus = status().isOk();
 		ResultMatcher checkBody = content().string("true");
 
-		// this.mvc.perform(mockRequest).andExpect(checkStatus).andExpect(checkBody);
-		// //Need to fix
+		this.mvc.perform(mockRequest).andExpect(checkStatus).andExpect(checkBody);
 	}
 
 }
