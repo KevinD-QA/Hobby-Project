@@ -12,10 +12,13 @@ public class TeamDTO {
 	
 
 	public TeamDTO() {
-		super();
 	}
 
-
+	public TeamDTO(String name) {
+		super();
+		this.name = name;
+	}
+	
 	public TeamDTO(Long id, String name, List<HeroDTO> heroes) {
 		super();
 		this.id = id;
@@ -23,16 +26,9 @@ public class TeamDTO {
 		this.heroes = heroes;
 	}
 	
-
 	public TeamDTO(Long id, String name) {
 		super();
 		this.id = id;
-		this.name = name;
-	}
-
-
-	public TeamDTO(String name) {
-		super();
 		this.name = name;
 	}
 

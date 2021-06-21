@@ -16,7 +16,6 @@ import com.example.repo.TeamRepo;
 public class TeamService {
 
 	private TeamRepo repo;
-
 	private ModelMapper mapper;
 
 	public TeamService(TeamRepo repo, ModelMapper mapper) {
@@ -43,7 +42,7 @@ public class TeamService {
 		return dtos;
 	}
 	
-	public TeamDTO updateTeam(Long id, Team newData) {
+	public TeamDTO updateTeam(Long id, TeamDTO newData) {
 		Team existing = this.repo.findById(id).orElseThrow(() -> new EntityNotFoundException()); //Fetches team that exists
 																									
 		existing.setName(newData.getName()); //Updates fields

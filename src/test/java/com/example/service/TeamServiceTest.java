@@ -22,7 +22,7 @@ import com.example.repo.TeamRepo;
 
 @SpringBootTest
 @ActiveProfiles("test")
-public class TeamServiceTest {
+class TeamServiceTest {
 
 	@Autowired
 	private TeamService service;
@@ -42,13 +42,13 @@ public class TeamServiceTest {
 	}
 	
 	@Test
-	public void testTeamService() {
+	void testTeamService() {
 		TeamService tService = new TeamService(repo, mapper);
 		assertThat(tService).isInstanceOf(TeamService.class);
 	}
 	
 	@Test
-	public void testCreateTeam() {
+	void testCreateTeam() {
 		//Given
 		Team newTeam = new Team("Pyro Squad");
 		Team newTeam2 = new Team(1l,"Pyro Squad");
@@ -64,7 +64,7 @@ public class TeamServiceTest {
 	}
 	
 	@Test
-	public void testReadTeam() {
+	void testReadTeam() {
 		//Given
 		List<Team> teams = new ArrayList<>();
 		Team team1 = new Team(1l,"Team One bang");
@@ -108,7 +108,7 @@ public class TeamServiceTest {
 	}
 		
 		@Test
-		public void testDeleteTask() {
+		void testDeleteTask() {
 			//Given
 			Long teamID = 1L;
 

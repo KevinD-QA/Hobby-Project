@@ -18,7 +18,7 @@ import com.example.domain.Hero;
 
 @SpringBootTest
 @ActiveProfiles("test")
-public class TeamDTOTest {
+class TeamDTOTest {
 
 	
 	@InjectMocks

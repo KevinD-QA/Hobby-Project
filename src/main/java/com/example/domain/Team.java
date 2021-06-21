@@ -24,6 +24,8 @@ public class Team {
 	@JsonIgnore
 	private List<Hero> heroes;
 
+	public Team () {	
+	}
 	
 	public Team(Long id, String name, List<Hero> heroes) {
 		super();

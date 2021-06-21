@@ -22,7 +22,7 @@ import com.example.repo.HeroRepo;
 
 @SpringBootTest
 @ActiveProfiles("test")
-public class HeroServiceTest {
+class HeroServiceTest {
 	
 	@Autowired
 	private HeroService service;
@@ -59,7 +59,7 @@ public class HeroServiceTest {
 		Mockito.when(this.repo.save(newHero)).thenReturn(newHero2);
 		Mockito.when(this.mapper.map(newHero2, HeroDTO.class)).thenReturn(heroDTO);
 		//Then
-		assertThat(this.service.createHero(newHero)).isEqualTo(heroDTO);
+		assertThat(this.service.createHero(heroDTO)).isEqualTo(heroDTO);
 		Mockito.verify(this.repo, Mockito.times(1)).save(newHero);
 	}
 	

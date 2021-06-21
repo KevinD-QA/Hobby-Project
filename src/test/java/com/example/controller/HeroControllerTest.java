@@ -12,13 +12,12 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.ActiveProfiles;
 
 import com.example.controllers.HeroController;
-import com.example.domain.Hero;
 import com.example.dto.HeroDTO;
 import com.example.service.HeroService;
 
 @SpringBootTest
 @ActiveProfiles("test")
-public class HeroControllerTest {
+class HeroControllerTest {
 	
 	@Autowired
 	private HeroController controller;
@@ -30,15 +29,15 @@ public class HeroControllerTest {
 	@Test
 	void testCreateHero() {
 		//Given 
-		Hero testHero = new Hero("Hu Tao", "Pyro", "Polearm" , 90l);
 		HeroDTO newDTO = new HeroDTO(1l, "Hu Tao", "Pyro", "Polearm" , 90l);
 		
 		//When
-		Mockito.when(this.service.createHero(testHero)).thenReturn(newDTO);
+		HeroDTO newDTO2 = new HeroDTO(1l, "Hu Tao", "Pyro", "Polearm" , 90l);
+		Mockito.when(this.service.createHero(newDTO)).thenReturn(newDTO2);
 		
 		//Then
-		assertThat(this.controller.createHero(testHero)).isEqualTo(newDTO);
-		Mockito.verify(this.service, Mockito.times(1)).createHero(testHero);
+		assertThat(this.controller.createHero(newDTO)).isEqualTo(newDTO2);
+		Mockito.verify(this.service, Mockito.times(1)).createHero(newDTO2);
 	}
 	
 	@Test
@@ -58,16 +57,16 @@ public class HeroControllerTest {
 	@Test
 	void testUpdateHero() {
 		//Given
-		Hero updateHero = new Hero("Xiao", "Anemo", "Polearm", 90l);
-		HeroDTO updateDTO = new HeroDTO(1l, "Xiao", "Anemo", "Polearm", 90l);
+		HeroDTO updateDTO = new HeroDTO("Xiao", "Anemo", "Polearm", 90l);
 		
 		//When
 		Long testID = 1l;
-		Mockito.when(this.service.updateHeroes(testID,updateHero)).thenReturn(updateDTO);
+		HeroDTO updateDTO2 = new HeroDTO(1l, "Xiao", "Anemo", "Polearm", 90l);
+		Mockito.when(this.service.updateHeroes(testID,updateDTO)).thenReturn(updateDTO2);
 		
 		//Then
-		assertThat(this.controller.updateHeroes(updateHero, testID)).isEqualTo(updateDTO);
-		Mockito.verify(this.service, Mockito.times(1)).updateHeroes(testID, updateHero);		
+		assertThat(this.controller.updateHeroes(updateDTO, testID)).isEqualTo(updateDTO2);
+		Mockito.verify(this.service, Mockito.times(1)).updateHeroes(testID, updateDTO);		
 	}
 	
 	@Test

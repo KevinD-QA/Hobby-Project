@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.domain.Team;
 import com.example.dto.TeamDTO;
 import com.example.service.TeamService;
 
@@ -39,8 +38,8 @@ public class TeamController {
 	}
 
 	@PutMapping("/update/{id}")
-	public TeamDTO updateTeam(@RequestBody Team team, @PathVariable Long id) {
-		return this.service.updateTeam(id, team);
+	public TeamDTO updateTeam(@RequestBody TeamDTO teamDTO, @PathVariable Long id) {
+		return this.service.updateTeam(id, teamDTO);
 	}
 
 	@DeleteMapping("/remove/{id}")

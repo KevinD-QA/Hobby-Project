@@ -36,7 +36,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @Sql(scripts = {"classpath:heroes-schema.sql",
 		"classpath:heroes-data.sql"}, executionPhase = ExecutionPhase.BEFORE_TEST_METHOD)
 @ActiveProfiles("test")
-public class HeroIntegrationTest {
+class HeroIntegrationTest {
 
 	@Autowired
 	private MockMvc mvc; //Allows us to mock requests
