@@ -91,7 +91,7 @@ We use [SemVer](http://semver.org/) for versioning.
 
 This project is licensed under the MIT license - see the [LICENSE.md](LICENSE.md) file for details 
 
-[![Quality Gate Status](http://localhost:9000/api/project_badges/measure?project=sonar.hobby-project&metric=alert_status)](http://localhost:9000/dashboard?id=sonar.hobby-project)
+http://localhost:9000/api/project_badges/measure?project=sonar.hobby-project&metric=alert_status
 
 ## Acknowledgments
 
