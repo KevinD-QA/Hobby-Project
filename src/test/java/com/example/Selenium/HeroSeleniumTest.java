@@ -77,7 +77,7 @@ public class HeroSeleniumTest {
 	@Test
 	public void testRead() {
 		
-		//Needs to have one record already populated
+		//Insert heroes-data.sql and schema do not work
 		new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"mainbody\"]/tr[1]")));
 		
 		assertEquals("1", driver.findElement(By.xpath("//*[@id=\"mainbody\"]/tr/td[1]")).getText());
@@ -132,18 +132,18 @@ public class HeroSeleniumTest {
 
 	}
 	
-//	@Test
-//	public void testDelete() {
-//		targ = driver.findElement(By.xpath("//*[@id=\"deleteBtn\"]"));
-//		targ.click();
-//		
-//		new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"mainbody\"]/tr")));
-//		assertTrue(driver.findElements(By.xpath("//*[@id=\\\"mainbody\\\"]/tr")).size() < 1);
-//	
-//	}
+	@Test
+	public void testDelete() {
+		targ = driver.findElement(By.xpath("//*[@id=\"deleteBtn\"]"));
+		targ.click();
+		
+		new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"mainbody\"]/tr")));
+		assertTrue(driver.findElements(By.xpath("//*[@id=\\\"mainbody\\\"]/tr")).size() < 1);
 	
-//	@AfterAll
-//	public static void tearDown() {
-//		driver.quit();
-//	}
+	}
+	
+	@AfterAll
+	public static void tearDown() {
+		driver.quit();
+	}
 }
