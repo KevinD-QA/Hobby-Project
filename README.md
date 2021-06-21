@@ -1,7 +1,7 @@
-Coverage: 62.5% TBD
+Coverage: 86% TBD
 # Hobby-Project
 
-This project aimed to create a list-type of application-based of our hobbies. The application would be able to CREATE / UPDATE / DELETE certain records stored in our database, using SQL and Eclipse as our database and IDE. The Hobby-Project is designed to store details on "Teams" and "Characters", store them into the database whilst also being able to be modified by CRUD functionality. Each table will have different sets of data but will each also have a unique primary key. The tables will then be linked use Foreign Keys so that they have a relationship.
+This project aimed to create a list-type of application-based of our hobbies. The application would be able to CREATE / UPDATE / DELETE certain records stored in our database, using SQL and Eclipse as our database and IDE. The Hobby-Project is designed to store details on "Teams" and "Heroes", store them into the database whilst also being able to be modified by CRUD functionality. Each table will have different sets of data but will each also have a unique primary key. The tables will then be linked use Foreign Keys so that they have a relationship.
 
 ## Getting Started
 
@@ -71,6 +71,72 @@ As a prerequisite, I used Mocikto to “mock” certain items. To use Mockito, a
 ```
 Using Mockito is very helpful in helping us further test methods by calling parameters throughout the test.
 
+### Intergration Tests 
+
+Integration tests involves seeing how the application works alongside itself,verifying interactions between the modules of the system and the interfaces between. The response of the interaction is then checked to see if it works accordingly. Below is an example of one of our integration tests:
+
+```
+	@Test
+	void testUpdate() throws Exception{
+		Team team = new Team(1L, null);
+		Hero testHero = new Hero(1l,"Ganyu", "Cryo", "Bow", 90l, team);
+		String testHeroAsJson = this.mapper.writeValueAsString(testHero);
+
+		HeroDTO testSavedHero = new HeroDTO(1l, "Ganyu", "Cryo", "Bow", 90l);
+		String testSavedHeroAsJson = this.mapper.writeValueAsString(testSavedHero);
+
+		RequestBuilder mockRequest = put("/heroes/update/1").content(testHeroAsJson)
+				.contentType(MediaType.APPLICATION_JSON);
+		ResultMatcher checkStatus = status().isOk();
+		ResultMatcher checkBody = content().json(testSavedHeroAsJson);
+		this.mvc.perform(mockRequest).andExpect(checkStatus).andExpect(checkBody);
+```
+### Selenium
+
+The use of Selenium allows us to interact with the application in real scenarios as if the user was touring the application. This is a form of User acceptance testing. The tests are able to click buttons, fill in text boxes, clear entities and more. An example of A User acceptance test is also shown below:
+
+```
+	@Test
+	public void testCreate() {
+		
+		targ = driver.findElement(By.id("addCharacterBtn"));
+		targ.click();
+		
+		new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOfElementLocated(By.id("AddCharacterModal")));
+		targ = driver.findElement(By.id("name"));
+		targ.click();
+		targ.sendKeys("Ganyu");
+		
+		targ = driver.findElement(By.id("element"));
+		targ.click();
+		
+		targ = driver.findElement(By.xpath("//*[@id=\"element\"]/option[3]"));
+		targ.click();
+		
+		targ = driver.findElement(By.id("weapon"));
+		targ.click();
+		
+		targ = driver.findElement(By.xpath("//*[@id=\"weapon\"]/option[1]"));
+		targ.click();
+		
+		targ = driver.findElement(By.id("level"));
+		targ.click();
+		
+		targ = driver.findElement(By.xpath("//*[@id=\"level\"]"));
+		targ.click();
+		targ.sendKeys("90");
+		
+		targ = driver.findElement(By.xpath("//*[@id=\"submitBtn\"]"));
+		targ.click();
+		
+		new WebDriverWait(driver, 3).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"mainbody\"]/tr[1]")));
+		assertEquals("Ganyu", driver.findElement(By.xpath("//*[@id=\"mainbody\"]/tr/td[2]")).getText());
+		assertEquals("Cryo", driver.findElement(By.xpath("//*[@id=\"mainbody\"]/tr/td[3]")).getText());
+		assertEquals("Bow", driver.findElement(By.xpath("//*[@id=\"mainbody\"]/tr/td[4]")).getText());
+		assertEquals("90", driver.findElement(By.xpath("//*[@id=\"mainbody\"]/tr/td[5]")).getText());
+	}
+```
+
 ## Deployment
 
 To deploy on a live server, we can use GCP to connect our database onto a cloud server which can be run continuously and not have to be saved locally. Also, we can create a jar file. By aggregating all our files we can then distribute them and have other users run the IMS system on their machines.
@@ -94,6 +160,6 @@ This project is licensed under the MIT license - see the [LICENSE.md](LICENSE.md
 [![Quality Gate Status](http://localhost:9000/api/project_badges/measure?project=sonar.hobby-project&metric=alert_status)](http://localhost:9000/dashboard?id=sonar.hobby-project)
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
+* Hat tip to `Jordan Harrison` for his SpringCar Demo and everyone within `Team Elm` for helping each other outt. As well as `Alan Davis` for extending the deadline to make this all possible. Thank you.
 * Inspiration
 * etc
